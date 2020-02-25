@@ -66,14 +66,15 @@ li a {
   height: 100%;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
+  overflow: scroll;
+  justify-content: space-evenly;
 }
+
 .box {
   height: 300px;
   width: 250px;
   background-color: cornsilk;
-  display: block;
-  margin: 10px
+  margin: 10px;
+  overflow: scroll;
 }
 
