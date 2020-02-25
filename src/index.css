@@ -1,3 +1,8 @@
+html {
+  height: 100%;
+  margin: 0px
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  margin: 0
+}
+
+.App {
+  height: 100%;
+  display: flex;
+
+  
+}
+
+/* menu */
+.App-link {
+  color: #61dafb;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  display:flex;
+  flex-direction: column;
+}
+li a {
+  text-decoration: none;
+}
+
+.sideMenu {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  background-color: cornflowerblue;
+}
+
+/* content */
+.content {
+  width: 80%;
+  height: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.box {
+  height: 300px;
+  width: 250px;
+  background-color: cornsilk;
+  display: block;
+  margin: 10px
+}
+
