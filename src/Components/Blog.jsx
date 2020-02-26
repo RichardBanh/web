@@ -6,7 +6,7 @@ import Box from "./Blog/BoxBlog"
 class ContentBlog extends Component {
   state = {  }
   render() { 
-    return ( <div></div> );
+    return ( <div>Blog</div> );
   }
 }
  

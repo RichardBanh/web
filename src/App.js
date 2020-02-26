@@ -1,22 +1,53 @@
 import React from "react";
-import Menu from "./Components/Menu";
-import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import ContentBlog from "./Components/Blog";
+import Code from "./Components/Blog";
+import CraftHouse from "./Components/Crafthouse";
+import Ux from "./Components/UX";
+import Landing from "./Components/Landing";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className='App'>
-        <Menu />
-
+        <div className='sideMenu'>
+          <ul>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/Blog'>Blog</Link>
+            </li>
+            <li>
+              <Link to='/UX'>UX</Link>
+            </li>
+            <li>
+              <Link to='/Code'>Code</Link>
+            </li>
+            <li>
+              <Link to='/cRaFtHouse'>cRaFtHouse</Link>
+            </li>
+          </ul>
+        </div>
         <Switch>
-          <Route path='/'>Splash Page</Route>
-          <Route path=''></Route>
-          <Route path=''></Route>
-          <Route path=''></Route>
-          <Route path=''></Route>
+          <Route exact path='/'>
+            <Landing />
+          </Route>
+          <Route path='/code'>
+            <Code />
+          </Route>
+          <Route path='/blog'>
+            <ContentBlog />
+          </Route>
+          <Route path='/ux'>
+            <Ux />
+          </Route>
+          <Route path='/crafthouse'>
+            <CraftHouse />
+          </Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
