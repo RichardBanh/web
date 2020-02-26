@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Box from "./BoxBlog"
+import Box from "./Blog/BoxBlog"
 
 //place loop for data
 
