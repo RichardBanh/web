@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-class Landing extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return <div>Landing</div>;
-  }
+import React from "react";
+import { useParams } from "react-router-dom";
+
+function Landing() {
+  const bar = useParams()
+  console.log(bar)
+  return (
+    <div>Landing</div>
+  )
 }
 
 export default Landing;
