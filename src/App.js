@@ -17,19 +17,19 @@ function App() {
       <div className='App'>
         <div className='sideMenu'>
           <ul>
-            <li>
+            <li className="rectangle">
               <Link to='/'>Home</Link>
             </li>
-            <li>
+            <li className="rectangle">
               <Link to='/Blog'>Blog</Link>
             </li>
-            <li>
+            <li className="rectangle">
               <Link to='/UX'>UX</Link>
             </li>
-            <li>
+            <li className="rectangle">
               <Link to='/Code'>Code</Link>
             </li>
-            <li>
+            <li className="rectangle">
               <Link to='/cRaFtHouse'>cRaFtHouse</Link>
             </li>
           </ul>
