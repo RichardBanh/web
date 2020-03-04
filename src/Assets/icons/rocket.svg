@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="291px" viewBox="0 0 68 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Raised Front</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="72.2752596%" cy="68.1225734%" fx="72.2752596%" fy="68.1225734%" r="84.2260318%" gradientTransform="translate(0.722753,0.681226),scale(1.000000,0.855648),rotate(-90.000000),translate(-0.722753,-0.681226)" id="radialGradient-1">
+            <stop stop-color="#D76161" offset="0%"></stop>
+            <stop stop-color="#18464B" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="-45.3181465%" cy="11.0681419%" fx="-45.3181465%" fy="11.0681419%" r="201.278762%" gradientTransform="translate(-0.453181,0.110681),scale(1.000000,0.638563),rotate(43.782254),translate(0.453181,-0.110681)" id="radialGradient-2">
+            <stop stop-color="#D76161" offset="0%"></stop>
+            <stop stop-color="#18464B" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Front" transform="translate(-150.000000, -176.000000)">
+            <g id="Group-3" transform="translate(-34.000000, 0.000000)">
+                <g id="Background">
+                    <g id="Group" transform="translate(23.000000, 112.000000)" stroke="#979797" stroke-width="2">
+                        <g id="First" transform="translate(176.000000, 0.000000)">
+                            <ellipse id="Oval" cx="58.9217391" cy="77" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="58.9217391" cy="77" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="36.826087" cy="77" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="58.9217391" cy="35" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="58.9217391" cy="112" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="84.173913" cy="77" rx="36.826087" ry="35"></ellipse>
+                        </g>
+                        <g id="third" transform="translate(87.000000, 0.000000)">
+                            <ellipse id="Oval" cx="58.9217391" cy="77" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="58.9217391" cy="77" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="58.9217391" cy="35" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="58.9217391" cy="112" rx="36.826087" ry="35"></ellipse>
+                            <ellipse id="Oval" cx="84.173913" cy="77" rx="36.826087" ry="35"></ellipse>
+                        </g>
+                    </g>
+                    <g id="Group" opacity="0.285272507" transform="translate(0.000000, 228.000000)" stroke="#979797" stroke-width="2">
+                        <g id="First" transform="translate(167.000000, 0.000000)">
+                            <circle id="Oval" cx="56" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="35" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="35" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="112" r="35"></circle>
+                            <circle id="Oval" cx="80" cy="77" r="35"></circle>
+                        </g>
+                        <g id="third" transform="translate(83.000000, 0.000000)">
+                            <circle id="Oval" cx="80" cy="77" r="35"></circle>
+                        </g>
+                        <g id="Second" transform="translate(246.000000, 0.000000)">
+                            <circle id="Oval" cx="35" cy="77" r="35"></circle>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(23.000000, 344.000000)" stroke="#979797" stroke-width="2">
+                        <g id="First" transform="translate(167.000000, 0.000000)">
+                            <circle id="Oval" cx="56" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="35" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="35" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="112" r="35"></circle>
+                            <circle id="Oval" cx="80" cy="77" r="35"></circle>
+                        </g>
+                        <g id="third" transform="translate(83.000000, 0.000000)">
+                            <circle id="Oval" cx="56" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="77" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="35" r="35"></circle>
+                            <circle id="Oval" cx="56" cy="112" r="35"></circle>
+                            <circle id="Oval" cx="80" cy="77" r="35"></circle>
+                        </g>
+                    </g>
+                    <g id="Group" opacity="0.291457403" transform="translate(7.000000, 459.000000)">
+                        <g id="First" transform="translate(167.000000, 0.000000)" stroke="#979797" stroke-width="2">
+                            <circle id="Oval" cx="56" cy="35" r="35"></circle>
+                        </g>
+                        <g id="third" transform="translate(83.000000, 0.000000)"></g>
+                    </g>
+                </g>
+                <g id="Raised-Front" transform="translate(180.000000, 175.000000)">
+                    <g id="Logo" transform="translate(36.500000, 146.500000) rotate(1.000000) translate(-36.500000, -146.500000) translate(3.000000, 1.000000)">
+                        <g id="np_flame_1782210_000000" transform="translate(35.000000, 241.000000) scale(-1, -1) translate(-35.000000, -241.000000) translate(3.000000, 191.000000)">
+                            <path d="M16.6485305,42 L52.6485305,42 L52.6485305,86 L29.6485305,71 C23.1799044,64.569988 18.8465711,58.9033214 16.6485305,54 C14.4504898,49.0966786 14.4504898,45.0966786 16.6485305,42 Z" id="Rectangle" fill="url(#radialGradient-1)" transform="translate(33.824265, 64.000000) scale(-1, -1) translate(-33.824265, -64.000000) "></path>
+                            <path d="M47.031,75.461 C53.781,83.4376 53.1677,91.41 49.4841,100 C67.2771,83.438 66.6641,63.805 52.5505,42.332 C53.7771,52.762 53.7771,62.578 49.4841,66.258 C42.7341,57.0549 41.5075,46.012 43.3474,34.969 L36.5974,42.9456 C33.531,23.9256 40.2771,11.0436 50.0934,0.0006 C22.4884,8.5904 4.0814,26.9926 13.8984,76.6886 C5.9218,73.6222 4.082,63.8056 2.8554,53.3766 C-2.6641,71.7826 -0.211,87.1186 15.7384,99.3886 C14.5118,93.8691 14.5118,88.9586 16.35168,84.6656 C18.19148,88.9586 20.64468,92.0289 23.71498,93.8687 C17.57828,71.1697 20.03528,57.6737 27.39468,49.6967 C25.55488,60.1267 28.00796,69.3297 34.75798,77.3017 L39.05098,71.7822 C38.4377,76.6884 39.66426,81.5986 42.11738,86.5052 C45.18378,84.0521 46.41038,80.3685 46.41038,75.4622 L47.031,75.461 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                        <g id="Group-2">
+                            <rect id="Rectangle" fill="#FFFFFF" x="8" y="70" width="52" height="134"></rect>
+                            <g id="Logo">
+                                <g id="np_house_301276_000000" fill="#000000" fill-rule="nonzero">
+                                    <path d="M67,80.31443 L33.7836565,0 L0.176661518,78.4903104 C-0.263922057,79.5292138 0.11958677,80.4578016 1.327188,81.2760736 L5.06902509,84.0365457 C5.48872929,84.0365457 5.83012784,85.3740378 5.83012784,87.0183068 L5.83012784,204.018239 C5.83012784,205.662508 6.17152639,207 6.59123059,207 L60.9738113,207 C61.3935155,207 61.734914,205.662508 61.734914,204.018239 L61.7380459,87.0183068 C61.7380459,85.3740378 62.0794445,84.0365457 62.4991487,84.0365457 L66.109521,81.1677145 L67,80.31443 Z M57.8723834,201.552632 C47.2840264,198.738437 39.2593004,197.33134 33.7982052,197.33134 C28.3371101,197.33134 20.3129772,198.738437 9.72580645,201.552632 C9.75007056,150.395126 9.76220262,111.670385 9.76220262,85.378409 C9.76220262,65.6287457 21.8710139,86.8166742 33.7982052,85.378409 C45.6883388,83.9446126 57.3962184,59.8148901 57.8755503,84.8485569 C58.5156554,118.278794 58.5145998,157.180152 57.8723834,201.552632 Z" id="Shape"></path>
+                                </g>
+                                <text id="C" fill="url(#radialGradient-2)" font-family="Athelas-Regular, Athelas" font-size="48" font-weight="normal" letter-spacing="0.290909">
+                                    <tspan x="16.2096774" y="148.013158">C</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
