@@ -53,7 +53,7 @@ function App() {
               </Link>
             </li>
           </ul>
-          <button className='menu-button'><img className='icon-shrink' src={downLeft} /></button>
+          <button className='menu-button'><img  src={downLeft} /></button>
         </div>
         <Switch>
           <Route exact path='/'>
