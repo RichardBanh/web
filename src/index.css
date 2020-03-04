@@ -17,7 +17,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.tak {
+  text-shadow: aqua;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
