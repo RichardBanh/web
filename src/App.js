@@ -10,13 +10,18 @@ import book from "./Assets/icons/book.svg";
 import rocket from "./Assets/icons/rocket.svg";
 import pen from "./Assets/icons/pen.svg";
 import code from "./Assets/icons/code.svg";
+import downLeft from "./Assets/icons/downLeft.svg"
 
 function App() {
+  const whatisClicked = event => {
+    const selecName = event.target.className;
+    console.log(selecName);
+  };
   return (
     <BrowserRouter>
-      <div className='App'>
+      <div className='App' onClick={e => whatisClicked(e)}>
         <div className='ShowSideMenu'>
-          <ul>
+          <ul className='menu'>
             <li className='rectangle'>
               <Link to='/'>
                 <img className='icon' src={home} />
@@ -48,6 +53,7 @@ function App() {
               </Link>
             </li>
           </ul>
+          <button className='menu-button'><img className='icon-shrink' src={downLeft} /></button>
         </div>
         <Switch>
           <Route exact path='/'>
