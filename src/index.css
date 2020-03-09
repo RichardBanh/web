@@ -91,10 +91,19 @@ li a {
   transition: width 160ms linear, background-color 40ms linear;
 }
 
+.show {
+  visibility: hidden;
+}
+
 .menu-button:hover {
   width: 65px;
   background-color: blanchedalmond;
 }
+
+.menu-button:hover .show {
+  visibility: visible;
+}
+
 /* https://www.w3schools.com/cssref/css3_pr_animation.asp
 @keyframes bounceout {
   0% {
@@ -109,16 +118,6 @@ li a {
     background-color: blanchedalmond;
   }
 } */
-
-.icon-shrink {
-  width: 100px;
-  height: 100px;
-  display: none;
-  background-color: black;
-}
-
-.icon-shrink:hover {
-}
 
 /* content */
 .content {
