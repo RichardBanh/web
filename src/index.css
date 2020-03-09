@@ -87,14 +87,15 @@ li a {
   border: none;
   padding: 0;
   width: 50px;
-  animation: bounceout 2s infinite paused;
-  display:flex
+  display: flex;
+  transition: width 160ms linear, background-color 40ms linear;
 }
 
 .menu-button:hover {
-  animation-play-state: running;
+  width: 65px;
+  background-color: blanchedalmond;
 }
-/*https://www.w3schools.com/cssref/css3_pr_animation.asp*/
+/* https://www.w3schools.com/cssref/css3_pr_animation.asp
 @keyframes bounceout {
   0% {
     width: 50px;
@@ -107,7 +108,7 @@ li a {
     width: 70px;
     background-color: blanchedalmond;
   }
-}
+} */
 
 .icon-shrink {
   width: 100px;
@@ -117,7 +118,6 @@ li a {
 }
 
 .icon-shrink:hover {
-  
 }
 
 /* content */
