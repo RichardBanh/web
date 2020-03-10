@@ -10,17 +10,21 @@ import book from "./Assets/icons/book.svg";
 import rocket from "./Assets/icons/rocket.svg";
 import pen from "./Assets/icons/pen.svg";
 import code from "./Assets/icons/code.svg";
-import downLeft from "./Assets/icons/downLeft.svg"
+import downLeft from "./Assets/icons/downLeft.svg";
 
 function App() {
   const whatisClicked = event => {
     const selecName = event.target.className;
     console.log(selecName);
   };
+  const menuposition =null
+  const menuPos = event => {
+    
+  }
   return (
     <BrowserRouter>
       <div className='App' onClick={e => whatisClicked(e)}>
-        <div className='ShowSideMenu'>
+        <div className={menuposition ? 'hidden':'ShowSideMenu'  }>
           <ul className='menu'>
             <li className='rectangle'>
               <Link to='/'>
@@ -53,7 +57,9 @@ function App() {
               </Link>
             </li>
           </ul>
-          <button className='menu-button'><img className="show" src={downLeft} /></button>
+          <button className='menu-button' onClick={e => menuPos(e)}>
+            <img className='show' src={downLeft} />
+          </button>
         </div>
         <Switch>
           <Route exact path='/'>
