@@ -104,6 +104,19 @@ li a {
   visibility: visible;
 }
 
+.hidden {
+
+}
+
+@keyframes slideout {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-75%)
+  }
+}
+
 /* https://www.w3schools.com/cssref/css3_pr_animation.asp
 @keyframes bounceout {
   0% {

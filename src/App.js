@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import ContentBlog from "./Components/Blog";
 import Code from "./Components/Blog";
@@ -17,9 +17,9 @@ function App() {
     const selecName = event.target.className;
     console.log(selecName);
   };
-  const menuposition =null
+  const [menuposition, setmenuposition] = useState(false)
   const menuPos = event => {
-    
+    setmenuposition(!menuposition)
   }
   return (
     <BrowserRouter>
