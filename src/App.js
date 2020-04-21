@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import ContentBlog from "./Components/Blog";
 import Code from "./Components/Blog";
@@ -13,53 +13,57 @@ import code from "./Assets/icons/code.svg";
 import downLeft from "./Assets/icons/downLeft.svg";
 
 function App() {
-  const whatisClicked = event => {
+  //maybe unnecessary
+  const whatisClicked = (event) => {
     const selecName = event.target.className;
     console.log(selecName);
   };
-  const [menuposition, setmenuposition] = useState(false)
-  const menuPos = event => {
-    setmenuposition(!menuposition)
-  }
+  const [menuposition, setmenuposition] = useState(false);
+  const menuPos = (event) => {
+    setmenuposition(!menuposition);
+  };
   return (
     <BrowserRouter>
-      <div className='App' onClick={e => whatisClicked(e)}>
-        <div className={menuposition ? 'hidden':'ShowSideMenu'  }>
+      <div className='App' onClick={(e) => whatisClicked(e)}>
+        <div className={menuposition ? "hidden" : "ShowSideMenu"}>
           <ul className='menu'>
             <li className='rectangle'>
               <Link to='/'>
                 <img className='icon' src={home} />
-                Home
+                <p>Home</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/Blog'>
                 <img className='icon' src={book} />
-                Blog
+                <p>Blog</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/UX'>
                 <img className='icon' src={pen} />
-                UX
+                <p>UX</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/Code'>
                 <img className='icon' src={code} />
-                Code
+                <p>Code</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/cRaFtHouse'>
                 <img className='icon' src={rocket} />
-                cRaFtHouse
+                <p>cRaFtHouse</p>
               </Link>
             </li>
           </ul>
-          <button className='menu-button' onClick={e => menuPos(e)}>
+          <button className='menu-button' onClick={(e) => menuPos(e)}>
             <img className='show' src={downLeft} />
           </button>
+        </div>
+        <div className={menuposition ? "show" : "hidden"}>
+          <p>Sandwich</p>
         </div>
         <Switch>
           <Route exact path='/'>

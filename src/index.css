@@ -80,7 +80,7 @@ li a {
   border-width: 1px;
   border-style: dashed;
   border-color: black;
-  border-radius: 999px;
+  border-radius: 920px;
 }
 
 .menu-button {
@@ -91,9 +91,7 @@ li a {
   transition: width 160ms linear, background-color 40ms linear;
 }
 
-.show {
-  visibility: hidden;
-}
+
 
 .menu-button:hover {
   width: 65px;
@@ -105,7 +103,7 @@ li a {
 }
 
 .hidden {
-
+  display: none;
 }
 
 @keyframes slideout {
@@ -113,7 +111,7 @@ li a {
     transform: translateX(0);
   }
   100% {
-    transform: translate(-75%)
+    transform: translate(-75%);
   }
 }
 
