@@ -11,6 +11,7 @@ import rocket from "./Assets/icons/rocket.svg";
 import pen from "./Assets/icons/pen.svg";
 import code from "./Assets/icons/code.svg";
 import downLeft from "./Assets/icons/downLeft.svg";
+import outRight from "./Assets/icons/outright.svg";
 
 function App() {
   //maybe unnecessary
@@ -18,14 +19,29 @@ function App() {
     const selecName = event.target.className;
     console.log(selecName);
   };
-  const [menuposition, setmenuposition] = useState(false);
+  const [visible, setvisible] = useState(true);
+  const [transit, settransit] = useState(false);
+  const [hidden, sethidden] = useState(false);
+
   const menuPos = (event) => {
-    setmenuposition(!menuposition);
+    //transition period first then hidden stage // think animation
+    setTimeout(function () {
+      settransit(!transit);
+      setvisible(!visible);
+      sethidden(!hidden);
+    }, 3000);
+    
+    settransit(!transit);
   };
+
   return (
     <BrowserRouter>
       <div className='App' onClick={(e) => whatisClicked(e)}>
-        <div className={menuposition ? "hidden" : "ShowSideMenu"}>
+        <div
+          className={`${visible ? "ShowSideMenu" : ""} ${
+            transit ? "transit" : ""
+          } ${hidden ? "hidden" : ""}`}
+        >
           <ul className='menu'>
             <li className='rectangle'>
               <Link to='/'>
@@ -59,11 +75,14 @@ function App() {
             </li>
           </ul>
           <button className='menu-button' onClick={(e) => menuPos(e)}>
-            <img className='show' src={downLeft} />
+            <img className='out-right' src={downLeft} />
           </button>
         </div>
-        <div className={menuposition ? "show" : "hidden"}>
+        <div className={"hidden"}>
           <p>Sandwich</p>
+          <button className='menu-button' onClick={(e) => menuPos(e)}>
+            <img className='out-right' src={outRight} />
+          </button>
         </div>
         <Switch>
           <Route exact path='/'>
