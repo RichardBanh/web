@@ -22,15 +22,17 @@ function App() {
   const [visible, setvisible] = useState(true);
   const [transit, settransit] = useState(false);
   const [hidden, sethidden] = useState(false);
+  const [sandwich, showsand] = useState(false);
 
   const menuPos = (event) => {
     //transition period first then hidden stage // think animation
     setTimeout(function () {
-      settransit(!transit);
       setvisible(!visible);
+      settransit(!transit);
       sethidden(!hidden);
+      showsand(!sandwich);
     }, 3000);
-    
+
     settransit(!transit);
   };
 
@@ -45,44 +47,94 @@ function App() {
           <ul className='menu'>
             <li className='rectangle'>
               <Link to='/'>
-                <img className='icon' src={home} />
+                <div className='shapeshifter play'>
+                  <img className='icon' src={home} />
+                </div>
                 <p>Home</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/Blog'>
-                <img className='icon' src={book} />
+                <div className='shapeshifter play'>
+                  <img className='icon' src={book} />
+                </div>
                 <p>Blog</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/UX'>
-                <img className='icon' src={pen} />
+                <div className='shapeshifter play'>
+                  <img className='icon' src={pen} />
+                </div>
                 <p>UX</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/Code'>
-                <img className='icon' src={code} />
+                <div className='shapeshifter play'>
+                  <img className='icon' src={code} />
+                </div>
                 <p>Code</p>
               </Link>
             </li>
             <li className='rectangle'>
               <Link to='/cRaFtHouse'>
-                <img className='icon' src={rocket} />
+                <div className='shapeshifter2 play2'>
+                  <img className='icon' src={rocket} />
+                </div>
                 <p>cRaFtHouse</p>
               </Link>
             </li>
           </ul>
-          <button className='menu-button' onClick={(e) => menuPos(e)}>
+          <div className='menu-button' onClick={(e) => menuPos(e)}>
             <img className='out-right' src={downLeft} />
-          </button>
+          </div>
         </div>
-        <div className={"hidden"}>
-          <p>Sandwich</p>
-          <button className='menu-button' onClick={(e) => menuPos(e)}>
-            <img className='out-right' src={outRight} />
-          </button>
+        <div
+          className={`${hidden ? "" : "hidden"} ${sandwich ? "sandwich" : ""}`}
+        >
+          <ul className='menu'>
+            <li className='rectangle'>
+              <Link to='/'>
+                <div className='shapeshifter play'>
+                  <img className='icon' src={home} />
+                </div>
+                <p className='visibility'>Home</p>
+              </Link>
+            </li>
+            <li className='rectangle'>
+              <Link to='/Blog'>
+                <div className='shapeshifter play'>
+                  <img className='icon' src={book} />
+                </div>
+                <p className='visibility'>Blog</p>
+              </Link>
+            </li>
+            <li className='rectangle'>
+              <Link to='/UX'>
+                <div className='shapeshifter play'>
+                  <img className='icon' src={pen} />
+                </div>
+                <p className='visibility'>UX</p>
+              </Link>
+            </li>
+            <li className='rectangle'>
+              <Link to='/Code'>
+                <div className='shapeshifter play'>
+                  <img className='icon' src={code} />
+                </div>
+                <p className='visibility'>Code</p>
+              </Link>
+            </li>
+            <li className='rectangle'>
+              <Link to='/cRaFtHouse'>
+                <div className='shapeshifter2 play2'>
+                  <img className='icon' src={rocket} />
+                </div>
+                <p className='visibility'>cRaFtHouse</p>
+              </Link>
+            </li>
+          </ul>
         </div>
         <Switch>
           <Route exact path='/'>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="37px" viewBox="0 0 39 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="stupid-friggin-thing" transform="translate(-7.000000, -9.000000)">
+            <circle id="Oval" fill="#000000" cx="25" cy="25" r="18"></circle>
+            <path d="M24.8380837,9.73798089 C12.7417259,11.8766364 6.36021374,14.9459641 5.69354708,18.9459641 C5.31921471,21.1908052 4.75800267,25.0213523 6.69354708,28.9459641 C7.70243445,30.9916373 10.3691011,34.3249706 14.6935471,38.9459641 C19.8046582,43.6126307 23.4713249,45.9459641 25.6935471,45.9459641 C27.9157693,45.9459641 30.582436,43.6126307 33.6935471,38.9459641 C38.7376618,32.1578613 41.7376618,27.4911947 42.6935471,24.9459641 C43.8946967,21.7476693 43.21035,18.6514138 42.6935471,16.9459641 C41.5598297,13.2046969 35.6080086,10.8020358 24.8380837,9.73798089 Z" id="Path" fill="#000000" transform="translate(24.340409, 27.841972) rotate(20.000000) translate(-24.340409, -27.841972) "></path>
+            <circle id="Oval" fill="#FFFFFF" cx="25.5" cy="25.5" r="17.5"></circle>
+        </g>
+    </g>
+</svg>

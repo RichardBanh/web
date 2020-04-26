@@ -51,7 +51,7 @@ code {
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 li a {
@@ -64,7 +64,7 @@ li a {
   justify-content: space-evenly;
 }
 
-p{
+p {
   margin-top: 7px;
 }
 
@@ -74,19 +74,36 @@ p{
   height: 100%;
 }
 
+.sandwich {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 5%;
+  height: 100%;
+  animation-duration: 1s;
+  animation-name: push;
+}
+
+@keyframes push {
+  from {
+    width: 5%;
+  }
+  to {
+    width: 6%;
+  }
+}
+
 .rectangle {
   display: flex;
   justify-content: space-evenly;
 }
 
 .icon {
-  height: 35px;
-  width: 35px;
-  border: black;
-  border-width: 1px;
-  border-style: dashed;
-  border-color: black;
-  border-radius: 900px;
+  margin-top: 7px;
+  margin-left: 7px;
+  height: 32px;
+  width: 32px;
+  border-radius: 999px;
 }
 
 .out-right {
@@ -116,14 +133,72 @@ p{
   display: none;
 }
 
+.visibility {
+  visibility: hidden;
+}
+
 .transit {
   animation-duration: 3s;
-  animation-name : shrink;
+  animation-name: shrink;
 }
 
 @keyframes shrink {
-  from {width: 14%}
-  to {width:5%}
+  from {
+    width: 14%;
+  }
+  to {
+    width: 5%;
+  }
+}
+
+@keyframes play210 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -10500px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(210);
+  width: 50px;
+  height: 50px;
+  background-image: url(./Assets/icons/blackshadow.svg);
+}
+.shapeshifter.play {
+  animation-name: play210;
+}
+
+.shapeshifter:hover {
+  animation-play-state: paused;
+}
+
+@keyframes play180 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -9000px 0px;
+  }
+}
+
+.shapeshifter2 {
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(180);
+  width: 50px;
+  height: 50px;
+  background-image: url(./Assets/icons/colouredcircle.svg);
+}
+
+.shapeshifter2.play2 {
+  animation-name: play180;
+}
+
+.shapeshifter2:hover {
+  animation-play-state: paused;
 }
 
 /* content */
