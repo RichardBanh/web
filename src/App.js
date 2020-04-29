@@ -38,118 +38,118 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='App' onClick={(e) => whatisClicked(e)}>
+      <div className="App" onClick={(e) => whatisClicked(e)}>
         <div
           className={`${visible ? "ShowSideMenu" : ""} ${
             transit ? "transit" : ""
           } ${hidden ? "hidden" : ""}`}
         >
-          <ul className='menu'>
-            <li className='rectangle'>
-              <Link to='/'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={home} />
+          <ul className="menu">
+            <li className="rectangle">
+              <Link to="/">
+                <div className="shapeshifter play">
+                  <img className="icon" src={home} />
                 </div>
                 <p>Home</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/Blog'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={book} />
+            <li className="rectangle">
+              <Link to="/Blog">
+                <div className="shapeshifter play">
+                  <img className="icon" src={book} />
                 </div>
                 <p>Blog</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/UX'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={pen} />
+            <li className="rectangle">
+              <Link to="/UX">
+                <div className="shapeshifter play">
+                  <img className="icon" src={pen} />
                 </div>
                 <p>UX</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/Code'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={code} />
+            <li className="rectangle">
+              <Link to="/Code">
+                <div className="shapeshifter play">
+                  <img className="icon" src={code} />
                 </div>
                 <p>Code</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/cRaFtHouse'>
-                <div className='shapeshifter2 play2'>
-                  <img className='icon' src={rocket} />
+            <li className="rectangle">
+              <Link to="/cRaFtHouse">
+                <div className="shapeshifter2 play2">
+                  <img className="icon" src={rocket} />
                 </div>
                 <p>cRaFtHouse</p>
               </Link>
             </li>
           </ul>
-          <div className='menu-button' onClick={(e) => menuPos(e)}>
-            <img className='out-right' src={downLeft} />
+          <div className="menu-button" onClick={(e) => menuPos(e)}>
+            <img className="out-right" src={downLeft} />
           </div>
         </div>
         <div
           className={`${hidden ? "" : "hidden"} ${sandwich ? "sandwich" : ""}`}
         >
-          <ul className='menu'>
-            <li className='rectangle'>
-              <Link to='/'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={home} />
+          <ul className="menu">
+            <li className="rectangle">
+              <Link to="/">
+                <div className="shapeshifter play">
+                  <img className="icon" src={home} />
                 </div>
-                <p className='visibility'>Home</p>
+                <p className="visibility">Home</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/Blog'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={book} />
+            <li className="rectangle">
+              <Link to="/Blog">
+                <div className="shapeshifter play">
+                  <img className="icon" src={book} />
                 </div>
-                <p className='visibility'>Blog</p>
+                <p className="visibility">Blog</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/UX'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={pen} />
+            <li className="rectangle">
+              <Link to="/UX">
+                <div className="shapeshifter play">
+                  <img className="icon" src={pen} />
                 </div>
-                <p className='visibility'>UX</p>
+                <p className="visibility">UX</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/Code'>
-                <div className='shapeshifter play'>
-                  <img className='icon' src={code} />
+            <li className="rectangle">
+              <Link to="/Code">
+                <div className="shapeshifter play">
+                  <img className="icon" src={code} />
                 </div>
-                <p className='visibility'>Code</p>
+                <p className="visibility">Code</p>
               </Link>
             </li>
-            <li className='rectangle'>
-              <Link to='/cRaFtHouse'>
-                <div className='shapeshifter2 play2'>
-                  <img className='icon' src={rocket} />
+            <li className="rectangle">
+              <Link to="/cRaFtHouse">
+                <div className="shapeshifter2 play2">
+                  <img className="icon" src={rocket} />
                 </div>
-                <p className='visibility'>cRaFtHouse</p>
+                <p className="visibility">cRaFtHouse</p>
               </Link>
             </li>
           </ul>
         </div>
         <Switch>
-          <Route exact path='/'>
+          <Route exact path="/">
             <Landing />
           </Route>
-          <Route path='/code'>
+          <Route path="/code">
             <Code />
           </Route>
-          <Route path='/blog'>
+          <Route path="/blog">
             <ContentBlog />
           </Route>
-          <Route path='/ux'>
+          <Route path="/ux">
             <Ux />
           </Route>
-          <Route path='/crafthouse'>
+          <Route path="/crafthouse">
             <CraftHouse />
           </Route>
         </Switch>
