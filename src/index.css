@@ -17,9 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.tak {
-  text-shadow: aqua;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -65,16 +63,6 @@ li a {
   justify-content: space-evenly;
 }
 
-p {
-  margin-top: 7px;
-}
-
-.ShowSideMenu {
-  display: flex;
-  width: 14%;
-  height: 100%;
-}
-
 .sandwich {
   display: flex;
   width: 6%;
@@ -109,8 +97,12 @@ p {
 .icon {
   margin-top: 7px;
   margin-left: 7px;
-  height: 37px;
+  height: 35px;
   width: 32px;
+  border-radius: 15px 50px 30px;
+  background-color: #DAE8F5;
+  border-width: 50px;
+  border-color: black;
   
 }
 
@@ -119,23 +111,6 @@ p {
   opacity: 0;
 }
 
-.menu-button {
-  border: none;
-  padding: 0;
-  width: 50px;
-  display: flex;
-  transition: width 160ms linear, background-color 40ms linear;
-}
-
-.menu-button:hover {
-  display: flex;
-  width: 65px;
-  background-color: blanchedalmond;
-}
-
-.menu-button:hover .out-right {
-  opacity: 1;
-}
 
 .hidden {
   display: none;
@@ -151,10 +126,10 @@ p {
 }
 
 @keyframes shrink {
-  from {
+  0% {
     width: 14%;
   }
-  to {
+  100% {
     width: 5%;
   }
 }
@@ -167,6 +142,7 @@ p {
     background-position: -10500px 0px;
   }
 }
+
 .shapeshifter {
   animation-duration: 10000ms;
   animation-iteration-count: infinite;
@@ -175,6 +151,7 @@ p {
   height: 50px;
   background-image: url(./Assets/icons/blackshadow.svg);
 }
+
 .shapeshifter.play {
   animation-name: play210;
 }
@@ -225,4 +202,16 @@ p {
   background-color: cornsilk;
   margin: 10px;
   overflow: scroll;
+}
+
+/* landing */
+.landing {
+  height:60%;
+  width: 100%;
+  background-color: burlywood;
+
+}
+
+.landing_profilepic {
+  height:200px;
 }

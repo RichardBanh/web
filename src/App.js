@@ -40,58 +40,7 @@ function App() {
     <BrowserRouter>
       <div className="App" onClick={(e) => whatisClicked(e)}>
         <div
-          className={`${visible ? "ShowSideMenu" : ""} ${
-            transit ? "transit" : ""
-          } ${hidden ? "hidden" : ""}`}
-        >
-          <ul className="menu">
-            <li className="rectangle">
-              <Link to="/">
-                <div className="shapeshifter play">
-                  <img className="icon" src={home} />
-                </div>
-                <p>Home</p>
-              </Link>
-            </li>
-            <li className="rectangle">
-              <Link to="/Blog">
-                <div className="shapeshifter play">
-                  <img className="icon" src={book} />
-                </div>
-                <p>Blog</p>
-              </Link>
-            </li>
-            <li className="rectangle">
-              <Link to="/UX">
-                <div className="shapeshifter play">
-                  <img className="icon" src={pen} />
-                </div>
-                <p>UX</p>
-              </Link>
-            </li>
-            <li className="rectangle">
-              <Link to="/Code">
-                <div className="shapeshifter play">
-                  <img className="icon" src={code} />
-                </div>
-                <p>Code</p>
-              </Link>
-            </li>
-            <li className="rectangle">
-              <Link to="/cRaFtHouse">
-                <div className="shapeshifter2 play2">
-                  <img className="icon" src={rocket} />
-                </div>
-                <p>cRaFtHouse</p>
-              </Link>
-            </li>
-          </ul>
-          <div className="menu-button" onClick={(e) => menuPos(e)}>
-            <img className="out-right" src={downLeft} />
-          </div>
-        </div>
-        <div
-          className={`${hidden ? "" : "hidden"} ${sandwich ? "sandwich" : ""}`}
+          className="sandwich"
         >
           <ul className="menu">
             <li className="rectangle">
