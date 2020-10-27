@@ -290,12 +290,14 @@ li a {
 .rectangleRes {
 	margin-top: 20px;
 	width: auto;
-  display: flex;
-  align-items: baseline;
+  	display: flex;
+  	align-items: baseline;
 }
 
 .rectangleRes p {
 	margin: 0;
+	font-family: turtle-b;
+	font-size: 18px;
 }
 
 .spacing_block {
@@ -311,12 +313,9 @@ li a {
 	font-size: 15px;
 	padding: 10px;
 	width: 150px;
-	
+	font-family: turtle-b;
 	cursor: pointer;
-	
 }
-
-
 
 .git {
   width: 50px;
@@ -330,4 +329,39 @@ li a {
   margin-top: 25px;
   display: flex;
   justify-content: space-evenly
+}
+
+.block img {
+	width: 60px;
+	height:60px;
+	margin-left: 10px;
+}
+
+.block h1 {
+	font-size: 30px;
+}
+
+.side2 {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+
+.sandwich1 {
+	display: flex;
+	flex-direction: column;
+	width:40%;
+}
+
+.sandwich2 {
+	display: flex;
+	flex-direction: column;
+	width:60%;
+	background-color: burlywood;
+}
+
+a {
+	font-family: turtle-b;
+	margin-top: 10px;
+	text-decoration: none;
 }
