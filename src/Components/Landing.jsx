@@ -29,10 +29,7 @@ function Landing() {
  
   const dataComponent = 
     data.blog.map(({date, text}) => (
-    <div className="block">
-      <div className="date">{date}</div>
-      <p className="text">{text}</p>
-    </div>
+      <Box date={date} text={text}/>
   ))
   return (
     <div className="alllanding">
