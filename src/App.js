@@ -24,17 +24,6 @@ function App() {
   const [hidden, sethidden] = useState(false);
   const [sandwich, showsand] = useState(false);
 
-  const menuPos = (event) => {
-    //transition period first then hidden stage // think animation
-    setTimeout(function () {
-      setvisible(!visible);
-      settransit(!transit);
-      sethidden(!hidden);
-      showsand(!sandwich);
-    }, 3000);
-
-    settransit(!transit);
-  };
 
   return (
     <BrowserRouter>

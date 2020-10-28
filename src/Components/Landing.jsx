@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+
 import { useParams } from "react-router-dom";
 import profilepic from "../Assets/images/profile_pic.jpg";
 import burgburger from "../Assets/icons/group1Cats/burgburger.svg";
@@ -16,17 +17,26 @@ import cat11 from "../Assets/icons/group1Cats/cat3-1.svg";
 import cat12 from "../Assets/icons/group1Cats/cats5cat5-1.svg";
 import cat13 from "../Assets/icons/group1Cats/cats5cat5-2.svg";
 import cat14 from "../Assets/icons/group1Cats/cats5cat5-3.svg";
-import githubBut from "../Assets/images/git.png"
-import animalLogo from "../Assets/images/logos/AnimalLogo.png"
-import brainStation from "../Assets/images/logos/BrainstationLogo.jfif"
-import liberalparty from "../Assets/images/logos/LiberalPartyLogo.png"
-import UvicLogo from "../Assets/images/logos/UvicLogo.png"
+import githubBut from "../Assets/images/git.png";
+import animalLogo from "../Assets/images/logos/AnimalLogo.png";
+import brainStation from "../Assets/images/logos/BrainstationLogo.jfif";
+import liberalparty from "../Assets/images/logos/LiberalPartyLogo.png";
+import UvicLogo from "../Assets/images/logos/UvicLogo.png";
+import Box from "./Blog/BoxBlog"
+import data from "../Data/Blog.json"
 
 function Landing() {
-  const bar = useParams();
-  console.log(bar);
+ 
+  const dataComponent = 
+    data.blog.map(({date, text}) => (
+    <div className="block">
+      <div className="date">{date}</div>
+      <p className="text">{text}</p>
+    </div>
+  ))
   return (
-    <div className="landing background_landing">
+    <div className="alllanding">
+      <div className="landing background_landing">
       <div className="wrapper">
         <div className="subtop">
           <h1>Richard Banh</h1>
@@ -47,41 +57,41 @@ function Landing() {
               <img src={cat1} />
               <img src={cat2} />
               <img src={cat3} />
-              <p>/4 =>>React.js</p>
+              <p>/4 ={">>"}React.js</p>
             </div>
             <div className="rectangleRes">
               <img src={cat4} />
               <div className='spacing_block'></div>
               <img src={cat5} />
               <img className="img_png" src={cat6} />
-              <p>/4 =>>Python</p>
+              <p>/4 ={">>"}Python</p>
             </div>
             <div className="rectangleRes">
               <div className='spacing_block'></div>
               <img src={cat7} />
               <img className="img_png" src={cat8} />
               <div className='spacing_block'></div>
-              <p>/4 =>>Node.js</p>
+              <p>/4 ={">>"}Node.js</p>
             </div>
             <div className="rectangleRes">
               <img src={cat9} />
               <div className='spacing_block'></div>
               <img className="img_png" src={cat10} />
               <img src={cat11} />
-              <p>/4 =>>JavaScript</p>
+              <p>/4 ={">>"}JavaScript</p>
             </div>
             <div className="rectangleRes">
               <div className='spacing_block'></div>
               <img src={cat12} />
               <img src={cat13} />
               <img src={cat14} />
-              <p>/4 =>>UX Design/Cogpsych/CSS</p>
+              <p>/4 ={">>"}UX Design/Cogpsych/CSS</p>
             </div>
             <div className="rectangleRes">
               <div className='spacing_block'></div>
               <div className='spacing_block'></div>
               <div className='spacing_block'></div>
-              <p>1/<img src={burgburger} alt="" /> =>>Computer Sci</p>
+              <p>1/<img src={burgburger} alt="" /> ={">>"}Computer Sci</p>
             </div>
             <div className='rectangleRes_buttonblock'>
               <button className='button'>Resume Download</button>
@@ -109,10 +119,18 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className="wrapper_bottom">
-        
+    </div>
+      <div className="landing2">
+        <div className="wrapper_bottom">
+          <div className="part1">
+            {dataComponent}
+          </div>
+          <div className="part2"></div>
+        </div>
       </div>
     </div>
+    
+   
   );
 }
 

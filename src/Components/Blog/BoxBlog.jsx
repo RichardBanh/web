@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 
-class Box extends Component {
-  state = {  }
-  render() { 
-    return ( <div className='box'></div> );
+class Box extends React.Component {
+  constructor(props) {
+    this.state = {
+      blogs:[]
+    }
+  };
+
+  render() {
+    return (
+      <div></div>
+    );
   }
 }
  

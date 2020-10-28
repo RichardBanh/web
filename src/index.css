@@ -221,12 +221,46 @@ li a {
 }
 
 /* landing */
+.alllanding{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.landing2 {
+	height: 55%;
+	background-color: coral;
+	width: 100%;
+}
+
 .landing {
 	height: 45%;
 	width: 100%;
 	background-color: burlywood;
 	display: flex;
 	justify-content: flex-end;
+}
+
+.part1 {
+	width: 50%;
+	height:100%;
+	background-color: cornsilk;
+}
+
+.part2 {
+	width: 50%;
+	height: 100%;
+	background-color: cornflowerblue;
+}
+
+.wrapper_bottom {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 .wrapper {
@@ -360,8 +394,12 @@ li a {
 	background-color: burlywood;
 }
 
-a {
+.wrapper a {
 	font-family: turtle-b;
 	margin-top: 10px;
 	text-decoration: none;
+}
+
+.wrapper_bottom {
+	background-color: coral;
 }
