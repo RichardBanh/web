@@ -26,11 +26,14 @@ import Box from "./Blog/BoxBlog"
 import data from "../Data/Blog.json"
 
 function Landing() {
- 
+
+  const sorttoFour = data.blog.filter((entry) => entry.id < 5 )
+
   const dataComponent = 
-    data.blog.map(({date, text}) => (
+    sorttoFour.map(({date, text}) => (
       <Box date={date} text={text}/>
   ))
+
   return (
     <div className="alllanding">
       <div className="landing background_landing">
@@ -119,6 +122,7 @@ function Landing() {
     </div>
       <div className="landing2">
         <div className="wrapper_bottom">
+        <div className="vertical">Blorgz</div>
           <div className="part1">
             {dataComponent}
           </div>
