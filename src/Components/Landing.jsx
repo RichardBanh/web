@@ -27,6 +27,8 @@ import data from "../Data/Blog.json"
 
 function Landing() {
 
+  const animationHover = () => {console.log("hover")};
+
   const sorttoFour = data.blog.filter((entry) => entry.id < 5 )
 
   const dataComponent = 
@@ -126,7 +128,43 @@ function Landing() {
           <div className="part1">
             {dataComponent}
           </div>
-          <div className="part2"></div>
+          <div onMouseOver={animationHover} className="part2">
+            <svg className="lines"viewBox="0 0 398 30">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-17.000000, -169.000000)" fill="#D23232" stroke="#979797">
+                        <path d="M102.186322,170 L133.259021,198 L70.3927531,198 L102.186322,170 Z M177.554833,170 L193.70446,198 L133.259021,198 L177.554833,170 Z M246.370964,170 L267.464463,198 L193.70446,198 L246.370964,170 Z M321.223031,170 L355.071615,198 L267.464463,198 L321.223031,170 Z M400.911379,170 L414,198 L355.071615,198 L400.911379,170 Z M46.3297017,170 L70.3927531,198 L17,198 L46.3297017,170 Z" ></path>
+                    </g>
+                </g>
+            </svg>
+            <svg className="lines"viewBox="0 0 398 30">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-17.000000, -169.000000)" fill="#D23232" stroke="#979797">
+                        <path d="M102.186322,170 L133.259021,198 L70.3927531,198 L102.186322,170 Z M177.554833,170 L193.70446,198 L133.259021,198 L177.554833,170 Z M246.370964,170 L267.464463,198 L193.70446,198 L246.370964,170 Z M321.223031,170 L355.071615,198 L267.464463,198 L321.223031,170 Z M400.911379,170 L414,198 L355.071615,198 L400.911379,170 Z M46.3297017,170 L70.3927531,198 L17,198 L46.3297017,170 Z" ></path>
+                    </g>
+                </g>
+            </svg>
+            <svg className="lines"viewBox="0 0 398 30">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-17.000000, -169.000000)" fill="#D23232" stroke="#979797">
+                        <path d="M102.186322,170 L133.259021,198 L70.3927531,198 L102.186322,170 Z M177.554833,170 L193.70446,198 L133.259021,198 L177.554833,170 Z M246.370964,170 L267.464463,198 L193.70446,198 L246.370964,170 Z M321.223031,170 L355.071615,198 L267.464463,198 L321.223031,170 Z M400.911379,170 L414,198 L355.071615,198 L400.911379,170 Z M46.3297017,170 L70.3927531,198 L17,198 L46.3297017,170 Z" ></path>
+                    </g>
+                </g>
+            </svg>
+            <svg className="lines"viewBox="0 0 398 30">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-17.000000, -169.000000)" fill="#D23232" stroke="#979797">
+                        <path d="M102.186322,170 L133.259021,198 L70.3927531,198 L102.186322,170 Z M177.554833,170 L193.70446,198 L133.259021,198 L177.554833,170 Z M246.370964,170 L267.464463,198 L193.70446,198 L246.370964,170 Z M321.223031,170 L355.071615,198 L267.464463,198 L321.223031,170 Z M400.911379,170 L414,198 L355.071615,198 L400.911379,170 Z M46.3297017,170 L70.3927531,198 L17,198 L46.3297017,170 Z" ></path>
+                    </g>
+                </g>
+            </svg>
+            <svg className="lines"viewBox="0 0 398 30">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-17.000000, -169.000000)" fill="#D23232" stroke="#979797">
+                        <path d="M102.186322,170 L133.259021,198 L70.3927531,198 L102.186322,170 Z M177.554833,170 L193.70446,198 L133.259021,198 L177.554833,170 Z M246.370964,170 L267.464463,198 L193.70446,198 L246.370964,170 Z M321.223031,170 L355.071615,198 L267.464463,198 L321.223031,170 Z M400.911379,170 L414,198 L355.071615,198 L400.911379,170 Z M46.3297017,170 L70.3927531,198 L17,198 L46.3297017,170 Z" ></path>
+                    </g>
+                </g>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
