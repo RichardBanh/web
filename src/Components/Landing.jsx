@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import profilepic from "../Assets/images/profile_pic.jpg";
 import burgburger from "../Assets/icons/group1Cats/burgburger.svg";
@@ -25,31 +25,8 @@ import Box from "./Blog/BoxBlog";
 import data from "../Data/Blog.json";
 
 function Landing() {
-	const diffPaths = [
-		"M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11",
-		"M1 23L125 43L222 3L306 43L382 15L417 43L483 15L550 38L628 23",
-		"M1 23L115 48L222 3L299 43L382 15L426 37L483 15L559 43L628 23",
-		"M1 49L113 3L208 58L291 18L364 75L412 26L479 75L549 32L628 49",
-		"M1 23L125 43L222 3L306 43L382 15L417 43L483 15L550 38L628 23",
-	];
-	const [hover, setHover] = useState(false);
-	const [pathie, setPath] = useState(
-		"M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
-	);
-	const animationHover = () => {
-		let temp;
-		hover === false ? (temp = true) : (temp = false);
-		setHover(temp);
-	};
-	let intervalId;
 
-	if (hover) {
-		 intervalId = setInterval(() => {
-			
-		}, 1000);
-	} else {
-		clearInterval(intervalId);
-	}
+
 	const sorttoFour = data.blog.filter((entry) => entry.id < 5);
 
 	const dataComponent = sorttoFour.map(({ date, text }) => (
@@ -150,19 +127,73 @@ function Landing() {
 					<div className="vertical">Blorgz</div>
 					<div className="part1">{dataComponent}</div>
 					<div
-						onMouseEnter={animationHover}
-						onMouseLeave={animationHover}
 						className="part2"
 					>
 						<svg
 							width="629"
 							height="26"
+							
 							viewBox="0 0 629 26"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
 							overflow="visible"
 						>
-							<path d={pathie} stroke="#E0482A" stroke-width="4" />
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
 						</svg>
 					</div>
 				</div>

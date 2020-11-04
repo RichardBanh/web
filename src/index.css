@@ -443,12 +443,6 @@ li a {
 	align-self: right;
 }
 
-.line {
-	animation-name: shift;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-play-state: paused;
-}
 
 @keyframes shift {
 	0% {
@@ -472,9 +466,17 @@ li a {
 		d: path("M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11");
 	}
 }
-
-.linesShift {
+.part2 > svg >path {
 	animation-name: shift;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	animation-play-state: paused;
 }
+.part2:hover > svg >path {
+	animation-name: shift;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+
