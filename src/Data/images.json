@@ -1,24 +1,40 @@
 {
-    "images": [
+	"images": [
+		{
+			"id": 1,
+			"link": "../Assets/instaAlbum/1.jpg"
+		},
+		{
+			"id": 2,
+			"link": "../Assets/instaAlbum/2.jpg"
+		},
+		{
+			"id": 3,
+			"link": "../Assets/instaAlbum/3.jpg"
+		},
+		{
+			"id": 4,
+			"link": "../Assets/instaAlbum/4.jpg"
+		},
+		{
+			"id": 5,
+			"link": "../Assets/instaAlbum/5.jpg"
+		},
+		{
+			"id": 6,
+			"link": "../Assets/instaAlbum/6.jpg"
+		},
+		{
+			"id": 7,
+			"link": "../Assets/instaAlbum/7.jpg"
+		},
+		{
+			"id": 8,
+			"link": "../Assets/instaAlbum/8.jpg"
+		},
         {
-            "id":1,
-            "link":""
-        },
-        {
-            "id":2,
-            "link":""
-        },
-        {
-            "id":3,
-            "link":""
-        },
-        {
-            "id":4,
-            "link":""
-        },
-        {
-            "id":5,
-            "link":""
+            "id": 9,
+            "link": "../Assets/instaAlbum/9.jpg"
         }
-    ]
+	]
 }
