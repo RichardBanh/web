@@ -22,218 +22,244 @@ import brainStation from "../Assets/images/logos/BrainstationLogo.jfif";
 import liberalparty from "../Assets/images/logos/LiberalPartyLogo.png";
 import UvicLogo from "../Assets/images/logos/UvicLogo.png";
 import Box from "./Blog/BoxBlog";
+import InstagramPhotos from "./photoComp";
 import data from "../Data/Blog.json";
+import images from "../Data/images.json";
 
 function Landing() {
+  const shuffled = images.images.sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, 4);
+  const instaImg = selected.map(({ link }) => <InstagramPhotos link={link} />);
+  const sorttoFour = data.blog.filter((entry) => entry.id < 5);
+  const dataComponent = sorttoFour.map(({ date, text }) => (
+    <Box date={date} text={text} />
+  ));
 
-
-	const sorttoFour = data.blog.filter((entry) => entry.id < 5);
-
-	const dataComponent = sorttoFour.map(({ date, text }) => (
-		<Box date={date} text={text} />
-	));
-
-	return (
-		<div className="alllanding">
-			<div className="landing background_landing">
-				<div className="wrapper">
-					<div className="subtop">
-						<h1>Richard Banh</h1>
-						<img className="landing_profilepic" src={profilepic} alt="" />
-					</div>
-					<p className="text">
-						Looking to build cool stuff, <br />
-						for better or for worse; we learn something new and old ^..^
-					</p>
-					<p className="font">
-						Mostly looking for a job but here are somethoughts here and there,
-						maybe some illiterations from a faux literate.{" "}
-					</p>
-					<div className="bottom-block">
-						<div className="side">
-							<div className="rectangleRes">
-								<div className="spacing_block"></div>
-								<img src={cat1} />
-								<img src={cat2} />
-								<img src={cat3} />
-								<p>/4 ={">>"}React.js</p>
-							</div>
-							<div className="rectangleRes">
-								<img src={cat4} />
-								<div className="spacing_block"></div>
-								<img src={cat5} />
-								<img className="img_png" src={cat6} />
-								<p>/4 ={">>"}Python</p>
-							</div>
-							<div className="rectangleRes">
-								<div className="spacing_block"></div>
-								<img src={cat7} />
-								<img className="img_png" src={cat8} />
-								<div className="spacing_block"></div>
-								<p>/4 ={">>"}Node.js</p>
-							</div>
-							<div className="rectangleRes">
-								<img src={cat9} />
-								<div className="spacing_block"></div>
-								<img className="img_png" src={cat10} />
-								<img src={cat11} />
-								<p>/4 ={">>"}JavaScript</p>
-							</div>
-							<div className="rectangleRes">
-								<div className="spacing_block"></div>
-								<img src={cat12} />
-								<img src={cat13} />
-								<img src={cat14} />
-								<p>/4 ={">>"}UX Design/Cogpsych/CSS</p>
-							</div>
-							<div className="rectangleRes">
-								<div className="spacing_block"></div>
-								<div className="spacing_block"></div>
-								<div className="spacing_block"></div>
-								<p>
-									1/
-									<img src={burgburger} alt="" /> ={">>"}Computer Sci
-								</p>
-							</div>
-							<div className="rectangleRes_buttonblock">
-								<button className="button">Resume Download</button>
-								<img className="git" src={githubBut} alt="" />
-							</div>
-						</div>
-						<div className="side2">
-							<div className="sandwich1">
-								<div className="block">
-									<h1>Worked @</h1>
-									<img src={animalLogo} alt="" />
-									<img src={liberalparty} alt="" />
-								</div>
-								<div className="block">
-									<h1>sTuDiEd @</h1>
-									<img src={UvicLogo} alt="" />
-									<img src={brainStation} alt="" />
-								</div>
-								<a href="mailto:richard.g.banh@gmail.com">
-									richard.g.banh@gmail.com
-								</a>
-								<a href="tel:7789527551">778.952.7551</a>
-							</div>
-							<div className="sandwich2">Pattern animation</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="landing2">
-				<div className="wrapper_bottom">
-					<div className="vertical">Blorgz</div>
-					<div className="part1">{dataComponent}</div>
-					<div
-						className="part2"
-					>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<svg
-							width="629"
-							height="26"
-							
-							viewBox="0 0 629 26"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							overflow="visible"
-						>
-							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
-						</svg>
-						<div className="imgInsta"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="alllanding">
+      <div className="landing background_landing">
+        <div className="wrapper">
+          <div className="subtop">
+            <h1>Richard Banh</h1>
+            <img className="landing_profilepic" src={profilepic} alt="" />
+          </div>
+          <p className="text">
+            Looking to build cool stuff, <br />
+            for better or for worse; we learn something new and old ^..^
+          </p>
+          <p className="font">
+            Mostly looking for a job but here are somethoughts here and there,
+            maybe some illiterations from a faux literate.{" "}
+          </p>
+          <div className="bottom-block">
+            <div className="side">
+              <div className="rectangleRes">
+                <div className="spacing_block"></div>
+                <img src={cat1} />
+                <img src={cat2} />
+                <img src={cat3} />
+                <p>/4 ={">>"}React.js</p>
+              </div>
+              <div className="rectangleRes">
+                <img src={cat4} />
+                <div className="spacing_block"></div>
+                <img src={cat5} />
+                <img className="img_png" src={cat6} />
+                <p>/4 ={">>"}Python</p>
+              </div>
+              <div className="rectangleRes">
+                <div className="spacing_block"></div>
+                <img src={cat7} />
+                <img className="img_png" src={cat8} />
+                <div className="spacing_block"></div>
+                <p>/4 ={">>"}Node.js</p>
+              </div>
+              <div className="rectangleRes">
+                <img src={cat9} />
+                <div className="spacing_block"></div>
+                <img className="img_png" src={cat10} />
+                <img src={cat11} />
+                <p>/4 ={">>"}JavaScript</p>
+              </div>
+              <div className="rectangleRes">
+                <div className="spacing_block"></div>
+                <img src={cat12} />
+                <img src={cat13} />
+                <img src={cat14} />
+                <p>/4 ={">>"}UX Design/Cogpsych/CSS</p>
+              </div>
+              <div className="rectangleRes">
+                <div className="spacing_block"></div>
+                <div className="spacing_block"></div>
+                <div className="spacing_block"></div>
+                <p>
+                  1/
+                  <img src={burgburger} alt="" /> ={">>"}Computer Sci
+                </p>
+              </div>
+              <div className="rectangleRes_buttonblock">
+                <button className="button">Resume Download</button>
+                <img className="git" src={githubBut} alt="" />
+              </div>
+            </div>
+            <div className="side2">
+              <div className="sandwich1">
+                <div className="block">
+                  <h1>Worked @</h1>
+                  <img src={animalLogo} alt="" />
+                  <img src={liberalparty} alt="" />
+                </div>
+                <div className="block">
+                  <h1>sTuDiEd @</h1>
+                  <img src={UvicLogo} alt="" />
+                  <img src={brainStation} alt="" />
+                </div>
+                <a href="mailto:richard.g.banh@gmail.com">
+                  richard.g.banh@gmail.com
+                </a>
+                <a href="tel:7789527551">778.952.7551</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="landing2">
+        <div className="wrapper_bottom">
+          <div className="vertical">Blorgz</div>
+          <div className="part1">{dataComponent}</div>
+          <div className="part2">
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <svg
+              width="629"
+              height="26"
+              viewBox="0 0 629 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="visible"
+            >
+              <path
+                d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
+                stroke="#E0482A"
+                stroke-width="4"
+              />
+            </svg>
+            <div className="imgInsta">{instaImg}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Landing;
