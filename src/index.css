@@ -443,7 +443,6 @@ li a {
 	align-self: right;
 }
 
-
 @keyframes shift {
 	0% {
 		d: path("M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11");
@@ -466,17 +465,24 @@ li a {
 		d: path("M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11");
 	}
 }
-.part2 > svg >path {
+.part2 > svg > path {
 	animation-name: shift;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-play-state: paused;
 }
-.part2:hover > svg >path {
+.part2:hover > svg > path {
 	animation-name: shift;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
 }
 
-
+.imgInsta {
+	width: 40%;
+	height: 35%;
+	position: absolute;
+	background-color: aliceblue;
+	right: 0%;
+	bottom: 0%;
+}

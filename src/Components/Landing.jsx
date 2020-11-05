@@ -195,6 +195,40 @@ function Landing() {
 						>
 							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
 						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<svg
+							width="629"
+							height="26"
+							
+							viewBox="0 0 629 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							overflow="visible"
+						>
+							<path d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11" stroke="#E0482A" stroke-width="4" />
+						</svg>
+						<div className="imgInsta"></div>
 					</div>
 				</div>
 			</div>
