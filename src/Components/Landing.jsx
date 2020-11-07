@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import profilepic from "../Assets/images/profile_pic.jpg";
 import burgburger from "../Assets/icons/group1Cats/burgburger.svg";
 import cat1 from "../Assets/icons/group1Cats/cat1.svg";
@@ -31,8 +31,10 @@ function Landing() {
 	const selected = shuffled.slice(0, 4);
 	const instaImg = selected.map(({ link }) => <InstagramPhotos link={link} />);
 	const sorttoFour = data.blog.filter((entry) => entry.id < 5);
-	const dataComponent = sorttoFour.map(({ date, text }) => (
-		<Box date={date} text={text} />
+	const dataComponent = sorttoFour.map(({ date, text, id }) => (
+		
+		<Box date={date} text={text} id={id}/>
+	
 	));
 
 	return (

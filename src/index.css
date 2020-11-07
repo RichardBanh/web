@@ -529,5 +529,39 @@ li a {
 	height: 94%;
 }
 
-
 /* blog */
+.blog {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.specialB {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	
+	
+}
+.specialB .EDIT_textblock {
+	width: 40%;
+
+	position: relative;
+	min-width: 155px;
+	background: rgba(255, 255, 255, 0.1);
+	-webkit-transition: background-color 2s;
+}
+
+.blog h1 {
+	font-family: turtle-b;
+	font-size: 50px;
+	margin-left:5%
+}
+
+.blog .date {
+	font-size: 27px;
+}
+
+/* Single page blog */

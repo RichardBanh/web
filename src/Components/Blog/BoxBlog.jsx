@@ -1,8 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Box(props) {
 	return (
-		<div className="EDIT_textblock">
+		<div
+			className="EDIT_textblock"
+			onClick={(e) => {
+				e.preventDefault();
+				window.open(`/blog/${props.id}`, "_self");
+			}}
+		>
 			<div className="date">{props.date}</div>
 			<div className="bottom_text_block">
 				<p className="text_bottom">{props.text}</p>

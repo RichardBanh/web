@@ -1,18 +1,20 @@
 import React, { Component } from "react";
 import Box from "./Blog/BoxBlog";
 import data from "../Data/Blog.json";
-import Box from "./Blog/BoxBlog";
 
 //place loop for data
 
 class ContentBlog extends Component {
-	state = {};
-
 	render() {
-		const components = data.blog.map(({ date, text }) => (
-			<Box date={date} text={text} />
+		const components = data.blog.map(({ date, text, id}) => (
+			<Box date={date} text={text} id={id} />
 		));
-		return <div className="specialB">{components}</div>;
+		return (
+			<div className="blog">
+        <h1>Bloog</h1>
+				<div className="specialB">{components}</div>
+			</div>
+		);
 	}
 }
 
