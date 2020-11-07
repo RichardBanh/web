@@ -14,7 +14,17 @@ import SingleBlog from "./Components/Blog/SingleBlog";
 import data from "./Data/Blog.json";
 
 function App() {
-	const dataFind = (event) => data.blog.find(() => event);
+	const dataFind = (event) => {
+		
+			return data.blog.find((entry) => {
+				return entry.id === Number(event);
+			})
+		
+	};
+	// data.blog.find(() => {
+	// 	console.log(event);
+	// 	return event;
+	// });
 	return (
 		<BrowserRouter>
 			<div className="App">
@@ -29,7 +39,7 @@ function App() {
 							</Link>
 						</li>
 						<li className="rectangle">
-							<Link to="/Blog">
+							<Link to="/blog">
 								<div className="shapeshifter play">
 									<img className="icon" src={book} />
 								</div>

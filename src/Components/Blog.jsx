@@ -6,12 +6,12 @@ import data from "../Data/Blog.json";
 
 class ContentBlog extends Component {
 	render() {
-		const components = data.blog.map(({ date, text, id}) => (
+		const components = data.blog.map(({ date, text, id }) => (
 			<Box date={date} text={text} id={id} />
 		));
 		return (
 			<div className="blog">
-        <h1>Bloog</h1>
+				<h1>Bloog</h1>
 				<div className="specialB">{components}</div>
 			</div>
 		);

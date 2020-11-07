@@ -3,24 +3,19 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function SingleBlog(props) {
-    
-    const [data, setData] = useState(false)
-    const id = useParams()
-
-    const setDataFunc = async () => {
-        const returnData = await props.dataFind(id)
-        
-        setData(returnData);
-    }
-    setDataFunc()
-    if( data===false) {
-        return <div>Loading</div>
-    } else {
-        console.log(data)
-        return <div>Blog</div>;
-    }
-
 	
+    const id = useParams();
+    console.log(id.id)
+	const data2 = props.dataFind(id.id);
+
+	return (
+		<div className="singleBlogp">
+			<div className="single_block">
+				<div className="blog_date">{data2.date}</div>
+				<div className="blog_text">{data2.text}</div>
+			</div>
+		</div>
+	);
 }
 
 export default SingleBlog;

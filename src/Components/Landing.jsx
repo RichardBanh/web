@@ -31,6 +31,7 @@ function Landing() {
 	const selected = shuffled.slice(0, 4);
 	const instaImg = selected.map(({ link }) => <InstagramPhotos link={link} />);
 	const sorttoFour = data.blog.filter((entry) => entry.id < 5);
+	console.log(sorttoFour)
 	const dataComponent = sorttoFour.map(({ date, text, id }) => (
 		
 		<Box date={date} text={text} id={id}/>

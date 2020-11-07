@@ -499,7 +499,7 @@ li a {
 .part2:hover > svg > path {
 	width: 100%;
 	animation-name: shift;
-	animation-duration: 5s;
+	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
 }
@@ -542,12 +542,9 @@ li a {
 	width: 100%;
 	height: 100%;
 	overflow: scroll;
-	
-	
 }
 .specialB .EDIT_textblock {
 	width: 40%;
-
 	position: relative;
 	min-width: 155px;
 	background: rgba(255, 255, 255, 0.1);
@@ -557,7 +554,7 @@ li a {
 .blog h1 {
 	font-family: turtle-b;
 	font-size: 50px;
-	margin-left:5%
+	margin-left: 5%;
 }
 
 .blog .date {
@@ -565,3 +562,26 @@ li a {
 }
 
 /* Single page blog */
+
+.singleBlogp{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.single_block {
+	width: 47%;
+
+}
+
+.blog_date{
+	margin-bottom:70px;
+	font-family: turtle-b;
+	font-size:60px;
+}
+
+.blog_text {
+	line-height: 1.3;
+}
