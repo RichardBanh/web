@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import ContentBlog from "./Components/Blog";
-import Code from "./Components/Blog";
+import CodePage from "./Components/Code";
 import CraftHouse from "./Components/Crafthouse";
 import Ux from "./Components/UX";
 import Landing from "./Components/Landing";
@@ -55,7 +55,7 @@ function App() {
 							</Link>
 						</li>
 						<li className="rectangle">
-							<Link to="/Code">
+							<Link to="/code">
 								<div className="shapeshifter play">
 									<img className="icon" src={code} />
 								</div>
@@ -76,8 +76,8 @@ function App() {
 					<Route exact path="/">
 						<Landing />
 					</Route>
-					<Route path="/code">
-						<Code />
+					<Route exact path="/code">
+						<CodePage/>
 					</Route>
 					<Route exact path="/blog">
 						<ContentBlog />

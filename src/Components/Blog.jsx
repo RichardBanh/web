@@ -11,7 +11,7 @@ class ContentBlog extends Component {
 		));
 		return (
 			<div className="blog">
-				<h1>Bloog</h1>
+				<h1>Blorgz....</h1>
 				<div className="specialB">{components}</div>
 			</div>
 		);
