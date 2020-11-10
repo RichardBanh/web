@@ -23,22 +23,36 @@ import liberalparty from "../Assets/images/logos/LiberalPartyLogo.png";
 import UvicLogo from "../Assets/images/logos/UvicLogo.png";
 import Box from "./Blog/BoxBlog";
 import InstagramPhotos from "./photoComp";
-import dataM from "../Data/Blog.json";
+
 import images from "../Data/images.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Landing(props) {
-	const [data, setData] = useState(dataM)
-	
+	const [blogArray, setArray] = useState(null);
+
 	const shuffled = images.images.sort(() => 0.5 - Math.random());
 	const selected = shuffled.slice(0, 4);
 	const instaImg = selected.map(({ link }) => <InstagramPhotos link={link} />);
-	const sorttoFour = data.blog.filter((entry) => entry.id < 5);
 
-	const dataComponent = sorttoFour.map(({ date, text, id }) => (
-		<Box date={date} text={text} id={id} />
-	));
-
+	useEffect(() => {
+		fetch("../Data/Blog.json", {
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+			},
+		})
+			.then((response) => {
+				return response.json();
+			})
+			.then((json) => {
+				const sorttoFour = json.blog.filter((entry) => entry.id < 5);
+				setArray(
+					sorttoFour.map(({ date, text, id }) => (
+						<Box date={date} text={text} id={id} />
+					))
+				);
+			});
+	}, []);
 	return (
 		<div className="alllanding">
 			<div className="landing background_landing">
@@ -167,7 +181,7 @@ function Landing(props) {
 			<div className="landing2">
 				<div className="wrapper_bottom">
 					<div className="vertical">Blorgz</div>
-					<div className="part1">{dataComponent}</div>
+					<div className="part1">{blogArray}</div>
 					<div className="vertical2">Travel</div>
 					<div className="part2">
 						<svg
