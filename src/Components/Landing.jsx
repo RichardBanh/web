@@ -23,19 +23,20 @@ import liberalparty from "../Assets/images/logos/LiberalPartyLogo.png";
 import UvicLogo from "../Assets/images/logos/UvicLogo.png";
 import Box from "./Blog/BoxBlog";
 import InstagramPhotos from "./photoComp";
-import data from "../Data/Blog.json";
+import dataM from "../Data/Blog.json";
 import images from "../Data/images.json";
+import { useState } from "react";
 
-function Landing() {
+function Landing(props) {
+	const [data, setData] = useState(dataM)
+	
 	const shuffled = images.images.sort(() => 0.5 - Math.random());
 	const selected = shuffled.slice(0, 4);
 	const instaImg = selected.map(({ link }) => <InstagramPhotos link={link} />);
 	const sorttoFour = data.blog.filter((entry) => entry.id < 5);
-	console.log(sorttoFour)
+
 	const dataComponent = sorttoFour.map(({ date, text, id }) => (
-		
-		<Box date={date} text={text} id={id}/>
-	
+		<Box date={date} text={text} id={id} />
 	));
 
 	return (

@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Box(props) {
-	console.log(props.id);
+	
 	return (
 		<div
 			className="EDIT_textblock"

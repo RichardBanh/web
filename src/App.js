@@ -14,17 +14,13 @@ import SingleBlog from "./Components/Blog/SingleBlog";
 import data from "./Data/Blog.json";
 
 function App() {
+	const tempData = data
 	const dataFind = (event) => {
-		
-			return data.blog.find((entry) => {
-				return entry.id === Number(event);
-			})
-		
+		return tempData.blog.find((entry) => {
+			return entry.id === Number(event);
+		});
 	};
-	// data.blog.find(() => {
-	// 	console.log(event);
-	// 	return event;
-	// });
+
 	return (
 		<BrowserRouter>
 			<div className="App">
@@ -77,10 +73,10 @@ function App() {
 						<Landing />
 					</Route>
 					<Route exact path="/code">
-						<CodePage/>
+						<CodePage />
 					</Route>
 					<Route exact path="/blog">
-						<ContentBlog />
+						<ContentBlog/>
 					</Route>
 					<Route path="/blog/:id">
 						<SingleBlog dataFind={dataFind} />
