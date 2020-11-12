@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import profilepic from "../Assets/images/profile_pic.jpg";
 import burgburger from "../Assets/icons/group1Cats/burgburger.svg";
 import cat1 from "../Assets/icons/group1Cats/cat1.svg";
@@ -32,7 +31,9 @@ function Landing(props) {
 
 	const shuffled = images.images.sort(() => 0.5 - Math.random());
 	const selected = shuffled.slice(0, 4);
-	const instaImg = selected.map(({ link }) => <InstagramPhotos link={link} />);
+	const instaImg = selected.map(({ link, id }) => (
+		<InstagramPhotos key={id} link={link} />
+	));
 
 	useEffect(() => {
 		fetch("../Data/Blog.json", {
@@ -48,7 +49,7 @@ function Landing(props) {
 				const sorttoFour = json.blog.filter((entry) => entry.id < 5);
 				setArray(
 					sorttoFour.map(({ date, text, id }) => (
-						<Box date={date} text={text} id={id} />
+						<Box date={date} text={text} key={id} id={id} />
 					))
 				);
 			});
@@ -73,37 +74,37 @@ function Landing(props) {
 						<div className="side">
 							<div className="rectangleRes">
 								<div className="spacing_block"></div>
-								<img src={cat1} />
-								<img src={cat2} />
-								<img src={cat3} />
+								<img src={cat1} alt="Cat Drawing" />
+								<img src={cat2} alt="Cat Drawing" />
+								<img src={cat3} alt="Cat Drawing" />
 								<p>/4 ={">>"}React.js</p>
 							</div>
 							<div className="rectangleRes">
-								<img src={cat4} />
+								<img src={cat4} alt="Cat Drawing" />
 								<div className="spacing_block"></div>
-								<img src={cat5} />
-								<img className="img_png" src={cat6} />
+								<img src={cat5} alt="Cat Drawing" />
+								<img className="img_png" src={cat6} alt="Cat Drawing" />
 								<p>/4 ={">>"}Python</p>
 							</div>
 							<div className="rectangleRes">
 								<div className="spacing_block"></div>
-								<img src={cat7} />
-								<img className="img_png" src={cat8} />
+								<img src={cat7} alt="Cat Drawing" />
+								<img className="img_png" src={cat8} alt="Cat Drawing" />
 								<div className="spacing_block"></div>
 								<p>/4 ={">>"}Node.js</p>
 							</div>
 							<div className="rectangleRes">
-								<img src={cat9} />
+								<img src={cat9} alt="Cat Drawing" />
 								<div className="spacing_block"></div>
-								<img className="img_png" src={cat10} />
-								<img src={cat11} />
+								<img className="img_png" src={cat10} alt="Cat Drawing" />
+								<img src={cat11} alt="Cat Drawing" />
 								<p>/4 ={">>"}JavaScript</p>
 							</div>
 							<div className="rectangleRes">
 								<div className="spacing_block"></div>
-								<img src={cat12} />
-								<img src={cat13} />
-								<img src={cat14} />
+								<img src={cat12} alt="Cat Drawing" />
+								<img src={cat13} alt="Cat Drawing" />
+								<img src={cat14} alt="Cat Drawing" />
 								<p>/4 ={">>"}UX Design/Cogpsych/CSS</p>
 							</div>
 							<div className="rectangleRes">
@@ -195,7 +196,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -209,7 +210,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -223,7 +224,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -237,7 +238,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -251,7 +252,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -265,7 +266,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -279,7 +280,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -293,7 +294,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -307,7 +308,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -321,7 +322,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -335,7 +336,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<svg
@@ -349,7 +350,7 @@ function Landing(props) {
 							<path
 								d="M1 11L136 3L230 17L314 3L393 23L419 3L490 23L553 3L628 11"
 								stroke="rgb(0,0,0)"
-								stroke-width="4"
+								strokeWidth="4"
 							/>
 						</svg>
 						<div className="imgInsta">{instaImg}</div>

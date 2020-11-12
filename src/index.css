@@ -433,7 +433,6 @@ li a {
 	margin: 8px;
 	padding: 4px;
 	position: relative;
-
 	background-color: #ffffff;
 	-webkit-transition: background-color 2s;
 }
@@ -540,6 +539,7 @@ li a {
 	width: 180px;
 	height: 160px;
 	padding-left: 5px;
+	margin-top: 5px;
 }
 
 .insta_Img:hover {
@@ -582,11 +582,11 @@ li a {
 
 .specialB a {
 	margin-top: 100px;
-	width:200px;
+	width: 200px;
 	height: 200px;
 	display: flex;
-	justify-content: center;}
-
+	justify-content: center;
+}
 
 @-webkit-keyframes animate-svg-stroke-1 {
 	0% {
@@ -622,39 +622,39 @@ a:hover .svg-elem-1 {
 	animation-play-state: running;
 }
 
- @-webkit-keyframes animate-svg-stroke-2 {
+@-webkit-keyframes animate-svg-stroke-2 {
 	0% {
-	  stroke-dashoffset: 219.40333557128906px;
-	  stroke-dasharray: 219.40333557128906px;
+		stroke-dashoffset: 219.40333557128906px;
+		stroke-dasharray: 219.40333557128906px;
 	}
-  
+
 	100% {
-	  stroke-dashoffset: 0;
+		stroke-dashoffset: 0;
 	}
-  }
-  
-  @keyframes animate-svg-stroke-2 {
+}
+
+@keyframes animate-svg-stroke-2 {
 	0% {
-	  stroke-dashoffset: 219.40333557128906px;
-	  stroke-dasharray: 219.40333557128906px;
+		stroke-dashoffset: 219.40333557128906px;
+		stroke-dasharray: 219.40333557128906px;
 	}
-  
+
 	100% {
-	  stroke-dashoffset: 0;
+		stroke-dashoffset: 0;
 	}
-  }
-  
-  .svg-elem-0-1 {
+}
+
+.svg-elem-0-1 {
 	-webkit-animation: animate-svg-stroke-2 1s ease-in 0s both;
-			animation: animate-svg-stroke-2 1s ease-in 0s both;
-  }
-  
-  a:hover .svg-elem-0-1 {
+	animation: animate-svg-stroke-2 1s ease-in 0s both;
+}
+
+a:hover .svg-elem-0-1 {
 	animation-name: animate-svg-stroke-2;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
-  }
+}
 /* Single page blog */
 
 .singleBlogp {
@@ -715,7 +715,6 @@ a:hover .svg-elem-1 {
 .code_page_float h1 {
 	height: 4%;
 	padding: 10px;
-
 	font-size: 60px;
 	margin: 0;
 	padding-bottom: 0px;
@@ -731,4 +730,20 @@ a:hover .svg-elem-1 {
 .back_end {
 	height: 50%;
 	background-color: cornsilk;
+}
+
+/* UX */
+
+.ux {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ux_title {
+	background-color: whitesmoke;
+	font-family: turtle-b;
+	padding: 50px;
 }

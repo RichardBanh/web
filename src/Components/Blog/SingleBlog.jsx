@@ -1,21 +1,22 @@
-import React, { useAsync } from "react";
-import { useState, useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 
 function SingleBlog(props) {
-	
-    const id = useParams();
-    console.log(id.id)
+	const id = useParams();
 	const data2 = props.dataFind(id.id);
 
-	return (
-		<div className="singleBlogp">
-			<div className="single_block">
-				<div className="blog_date">{data2.date}</div>
-				<div className="blog_text">{data2.text}</div>
+	if (!data2) {
+		return <div>Loading</div>;
+	} else {
+		return (
+			<div className="singleBlogp">
+				<div className="single_block">
+					<div className="blog_date">{data2.date}</div>
+					<div className="blog_text">{data2.text}</div>
+				</div>
 			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default SingleBlog;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import ContentBlog from "./Components/Blog";
 import CodePage from "./Components/Code";
@@ -14,6 +14,7 @@ import SingleBlog from "./Components/Blog/SingleBlog";
 import data from "./Data/Blog.json";
 
 function App() {
+
 	const tempData = data
 	const dataFind = (event) => {
 		return tempData.blog.find((entry) => {
@@ -29,7 +30,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/">
 								<div className="shapeshifter play">
-									<img className="icon" src={home} />
+									<img className="icon" src={home} alt='Home Link' />
 								</div>
 								<p className="visibility">Home</p>
 							</Link>
@@ -37,7 +38,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/blog">
 								<div className="shapeshifter play">
-									<img className="icon" src={book} />
+									<img className="icon" src={book} alt='Blog Link' />
 								</div>
 								<p className="visibility">Blog</p>
 							</Link>
@@ -45,7 +46,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/UX">
 								<div className="shapeshifter play">
-									<img className="icon" src={pen} />
+									<img className="icon" src={pen} alt='User Experience Link' />
 								</div>
 								<p className="visibility">UX</p>
 							</Link>
@@ -53,7 +54,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/code">
 								<div className="shapeshifter play">
-									<img className="icon" src={code} />
+									<img className="icon" src={code} alt='Code Link' />
 								</div>
 								<p className="visibility">Code</p>
 							</Link>
@@ -61,7 +62,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/cRaFtHouse">
 								<div className="shapeshifter2 play2">
-									<img className="icon" src={rocket} />
+									<img className="icon" src={rocket} alt='Inhouse Design - Craft House'/>
 								</div>
 								<p className="visibility">cRaFtHouse</p>
 							</Link>
