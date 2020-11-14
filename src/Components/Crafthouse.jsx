@@ -8,14 +8,47 @@ class CraftHouse extends Component {
 	}
 	playanime = () => {
 		anime({
+			targets: ".tail_path",
+			d: [
+				{
+					value:
+						"M 48.4755 24.5391 C 55.4603 16.5625 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 54.187 57.6683 C 55.4519 46.6308 55.3174 37.3072 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 44.6637 65.0314 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 51.6444 100 C 23.0791 91.4101 4.0318 73.0078 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 2.7631 46.6237 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 16.7289 15.3345 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 20.693 42.4861 28.1561 50.3036 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 40.2179 28.218 C 39.5832 23.3117 40.8525 18.4015 43.3909 13.4949 Z",
+				},
+				{
+					value:
+						"M 57 21 C 59 15 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 77 47 C 59 34 53 35 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 40 66 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 0 101 C 23.0791 91.4101 14 71 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 -19 30 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 10 14 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 27 28 20 42 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 34 31 C 39.5832 23.3117 40.8525 18.4015 48 10 Z",
+				},
+				{
+					value:
+						"M 50 21 C 59 15 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 60 48 C 59 34 53 35 51.0139 33.7422 C 44.0291 42.9454 39 52 38 71 L 31 56 C 34.5059 76.0749 41.4866 88.9569 -5 95 C 23.0791 91.4101 14 71 12 20 C 5.9362 26.378 4.0324 36.1946 1 44 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 18 17 C 18.6327 11.0415 21.1713 7.9711 22 5 C 18.1019 29.3681 27 28 28 43 C 33 39 28.7907 30.6705 35.7755 22.6984 L 45 29 C 39.5832 23.3117 40.8525 18.4015 48 10 Z",
+				},
+				{
+					value:
+						"M 57 21 C 59 15 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 77 47 C 59 34 53 35 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 40 66 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 0 101 C 23.0791 91.4101 14 71 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 -19 30 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 10 14 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 27 28 20 42 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 34 31 C 39.5832 23.3117 40.8525 18.4015 48 10 Z",
+				},
+				{
+					value:
+						"M 48.4755 24.5391 C 55.4603 16.5625 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 54.187 57.6683 C 55.4519 46.6308 55.3174 37.3072 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 44.6637 65.0314 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 51.6444 100 C 23.0791 91.4101 4.0318 73.0078 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 2.7631 46.6237 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 16.7289 15.3345 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 20.693 42.4861 28.1561 50.3036 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 40.2179 28.218 C 39.5832 23.3117 40.8525 18.4015 43.3909 13.4949 Z",
+				},
+			],
+			duration: 900,
+
+			easing: "linear",
+
+			loop: true,
+		});
+		anime({
 			targets: ".cloud_bucket svg",
 
-			translateY: ['350vh'],
-      easing: 'spring(10, 50, 10, 0)',
-      duration:7000,
-      delay:anime.stagger(200),
-      loop: true,
-
+			translateY: function () {
+				return anime.random(2200, 4200);
+			},
+			easing: "easeInOutSine",
+			duration: function () {
+				return anime.random(600, 4000);
+			},
+			delay: anime.stagger(anime.random(50, 500)),
+			loop: true,
 		});
 	};
 
@@ -91,12 +124,11 @@ class CraftHouse extends Component {
 						</g>
 					</svg>
 					<svg
-						width="65px"
+						width="90px"
 						height="100px"
 						viewBox="0 0 65 100"
 						version="1.1"
-						xmlns="http://www.w3.org/2000/svg"
-						className="rocket_tail"
+						className="tail"
 					>
 						<defs>
 							<radialGradient
@@ -119,16 +151,16 @@ class CraftHouse extends Component {
 							fill="none"
 							fill-rule="evenodd"
 						>
-							<g id="Export" transform="translate(-210.000000, -377.000000)">
-								<g id="Tail-Left" transform="translate(210.000000, 377.000000)">
+							<g id="Export">
+								<g id="Tail-Right">
 									<path
-										d="M55.0733553,0.0006 L13,0.0006 L13,60.0006 L39.8801992,39.5460545 C47.4401104,30.7778564 52.5044958,23.0505837 55.0733553,16.3642364 C57.6422149,9.67788903 57.6422149,4.22334358 55.0733553,0.0006 Z"
+										d="M 55.0734 0.0006 L 13 0.0006 L 16 49 L 31 58 C 45 39 52.5045 23.0506 56 37 C 57.6422 9.6779 57.6422 4.2233 55.0734 0.0006 Z"
 										id="Rectangle"
 										fill="url(#radialGradient-1)"
 									></path>
 									<path
-										d="M48.4754842,24.5391472 C55.4602992,16.5624994 54.8256641,8.59005154 51.0139212,0 C69.4258934,16.5620994 68.7915687,36.1952172 54.1869933,57.668346 L54.302172,56.692495 C55.4519253,46.630772 55.3174403,37.3072238 51.0139212,33.7422025 C44.0291062,42.9453577 42.759836,53.9883239 44.6637414,65.0313902 L37.6789264,57.0547423 C34.5058543,76.0748564 41.4866336,88.9569337 51.6444172,100 C23.079111,91.4101485 4.03177929,73.007838 14.1902872,23.3115399 C5.93620202,26.3779583 4.03240016,36.1946172 2.76312994,46.6236797 C-2.94837912,28.2175693 -0.409942149,12.8814773 16.094296,0.611403668 C14.8250258,6.13093679 14.8250258,11.0414662 16.7289104,15.334492 C18.6327123,11.0414662 21.1712527,7.97114783 24.3483605,6.13133679 L23.9779903,7.48227077 C18.1019087,29.3681086 20.6929616,42.4860949 28.1560677,50.3036018 C26.2522658,39.8735392 28.7906821,30.670484 35.7755178,22.6984362 L40.2178601,28.2179693 C39.5832457,23.3117399 40.8524745,18.4015104 43.3909322,13.494881 C46.5640042,15.9479957 47.8332745,19.6316178 47.8332745,24.5379472 L48.4754842,24.5391472 Z"
-										id="Path2"
+										className="tail_path"
+										d="M 48.4755 24.5391 C 55.4603 16.5625 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 54.187 57.6683 C 55.4519 46.6308 55.3174 37.3072 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 44.6637 65.0314 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 51.6444 100 C 23.0791 91.4101 4.0318 73.0078 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 2.7631 46.6237 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 16.7289 15.3345 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 20.693 42.4861 28.1561 50.3036 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 40.2179 28.218 C 39.5832 23.3117 40.8525 18.4015 43.3909 13.4949 Z"
 										fill="#000000"
 										fill-rule="nonzero"
 									></path>
@@ -1490,6 +1522,1010 @@ class CraftHouse extends Component {
 									id="cloud-set2-R"
 									transform="translate(380.000000, 195.500000) scale(-1, 1) translate(-380.000000, -195.500000) translate(32.000000, 62.000000)"
 								>
+									<g id="First" transform="translate(502.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(0.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						className="clouds1"
+						width="698px"
+						height="269px"
+						viewBox="0 0 698 269"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+							opacity="0.291457403"
+						>
+							<g
+								id="Export"
+								transform="translate(-31.000000, -338.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g id="cloud-set1" transform="translate(32.000000, 339.000000)">
+									<g id="First" transform="translate(502.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(0.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						width="363px"
+						height="149px"
+						viewBox="0 0 363 149"
+						version="1.1"
+						className="clouds2"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+						>
+							<g
+								id="Export"
+								transform="translate(-47.000000, -343.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g
+									id="cloud-set1-small"
+									transform="translate(48.000000, 344.000000)"
+								>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						width="698px"
+						height="269px"
+						viewBox="0 0 698 269"
+						version="1.1"
+						className="clouds3"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+							opacity="0.291457403"
+						>
+							<g
+								id="Export"
+								transform="translate(-31.000000, -61.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g
+									id="cloud-set2-R"
+									transform="translate(380.000000, 195.500000) scale(-1, 1) translate(-380.000000, -195.500000) translate(32.000000, 62.000000)"
+								>
+									<g id="First" transform="translate(502.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(0.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+
+					<svg
+						width="382px"
+						height="149px"
+						viewBox="0 0 382 149"
+						version="1.1"
+						className="clouds4"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+						>
+							<g
+								id="Export"
+								transform="translate(-47.000000, -111.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g
+									id="cloud-set2-small"
+									transform="translate(48.000000, 112.000000)"
+								>
+									<g id="First" transform="translate(176.000000, 0.000000)">
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="36.826087"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="35"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="112"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="84.173913"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+									</g>
+									<g id="third" transform="translate(87.000000, 0.000000)">
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="36.826087"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="35"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="112"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="84.173913"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+									</g>
+									<g id="Fourth">
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="36.826087"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="35"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="112"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="84.173913"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+									</g>
+									<g id="Second" transform="translate(259.000000, 0.000000)">
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="36.826087"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="35"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="58.9217391"
+											cy="112"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+										<ellipse
+											id="Oval"
+											cx="84.173913"
+											cy="77"
+											rx="36.826087"
+											ry="35"
+										></ellipse>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						width="363px"
+						height="149px"
+						viewBox="0 0 363 149"
+						version="1.1"
+						className="clouds2"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+						>
+							<g
+								id="Export"
+								transform="translate(-47.000000, -343.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g
+									id="cloud-set1-small"
+									transform="translate(48.000000, 344.000000)"
+								>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						className="clouds1"
+						width="698px"
+						height="269px"
+						viewBox="0 0 698 269"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+							opacity="0.291457403"
+						>
+							<g
+								id="Export"
+								transform="translate(-31.000000, -338.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g id="cloud-set1" transform="translate(32.000000, 339.000000)">
+									<g id="First" transform="translate(502.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(0.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						width="363px"
+						height="149px"
+						viewBox="0 0 363 149"
+						version="1.1"
+						className="clouds2"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+						>
+							<g
+								id="Export"
+								transform="translate(-47.000000, -343.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g
+									id="cloud-set1-small"
+									transform="translate(48.000000, 344.000000)"
+								>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						width="698px"
+						height="269px"
+						viewBox="0 0 698 269"
+						version="1.1"
+						className="clouds3"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+							opacity="0.291457403"
+						>
+							<g
+								id="Export"
+								transform="translate(-31.000000, -61.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g
+									id="cloud-set2-R"
+									transform="translate(380.000000, 195.500000) scale(-1, 1) translate(-380.000000, -195.500000) translate(32.000000, 62.000000)"
+								>
+									<g id="First" transform="translate(502.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(418.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(335.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(581.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="First" transform="translate(167.000000, 0.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="third" transform="translate(83.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Fourth" transform="translate(0.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+									<g id="Second" transform="translate(246.000000, 120.000000)">
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="77" r="35"></circle>
+										<circle id="Oval" cx="35" cy="77" r="35"></circle>
+										<circle id="Oval" cx="56" cy="35" r="35"></circle>
+										<circle id="Oval" cx="56" cy="112" r="35"></circle>
+										<circle id="Oval" cx="80" cy="77" r="35"></circle>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<svg
+						className="clouds1"
+						width="698px"
+						height="269px"
+						viewBox="0 0 698 269"
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g
+							id="Page-1"
+							stroke="none"
+							stroke-width="1"
+							fill="none"
+							fill-rule="evenodd"
+							opacity="0.291457403"
+						>
+							<g
+								id="Export"
+								transform="translate(-31.000000, -338.000000)"
+								stroke="#979797"
+								stroke-width="2"
+							>
+								<g id="cloud-set1" transform="translate(32.000000, 339.000000)">
 									<g id="First" transform="translate(502.000000, 120.000000)">
 										<circle id="Oval" cx="56" cy="77" r="35"></circle>
 										<circle id="Oval" cx="56" cy="77" r="35"></circle>

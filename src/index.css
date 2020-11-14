@@ -795,7 +795,7 @@ a:hover .svg-elem-0-1 {
 	position:absolute;
 	display: flex;
 	flex-direction: column;
-	top: -280%;
+	top: -30vh;
 	
 
 
@@ -810,19 +810,21 @@ a:hover .svg-elem-0-1 {
 }
 
 .clouds1 {
-	
+	position: absolute;
 	margin-left: 45%;
 	box-sizing: border-box;
 
 }
 
 .clouds2 {
+	position: absolute;
 	width: 65%;
 	margin-left: 30%;
 	box-sizing: border-box;
 }
 
 .clouds3 {
+	position: absolute;
 	width: 65%;
 	margin-left: -10%;
 	box-sizing: border-box;
@@ -830,8 +832,15 @@ a:hover .svg-elem-0-1 {
 }
 
 .clouds4 {
+	position: absolute;
 	width: 65%;
-	margin-top: 10%;
 	margin-left: 10%;
 	box-sizing: border-box;
+}
+
+.tail-path{}
+
+.tail{
+	margin-left: -12px;
+	overflow: visible;
 }
