@@ -24,12 +24,7 @@ html {
 	height: 100%;
 	margin: 0px;
 	font-family: turtle;
-	background-color: rgba(204, 199, 240, 0.096);
-	background-image: linear-gradient(
-		to right,
-		rgba(255, 0, 0, 0.123),
-		rgba(255, 255, 0, 0.116)
-	);
+	background-color: #f4f4f2;
 }
 
 body {
@@ -761,24 +756,41 @@ a:hover .svg-elem-0-1 {
 .crafthouse {
 	width: 94%;
 	height: 300%;
-	background-color: whitesmoke;
+	background-color: #e8e8e8;
 	display: flex;
 	flex-direction: column;
 	z-index: -1000;
-
-
 }
 
 .crafthouse_header {
 	position: relative;
-	margin: 0;
+	margin-left: 60px;
+	letter-spacing: -5px;
 	font-family: noto-serif-b;
 	width: auto;
-	font-size: 100px;
-	background: radial-gradient(#d76161, #18464b);
+	font-size: 90px;
+	background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
 	z-index: 1000;
+}
+
+@keyframes background2{
+	from {background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) ;}
+	to { background:-webkit-linear-gradient(rgb(0, 0, 0), rgb(251, 215, 12))}
+}
+
+#fontgrad {
+	background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: background2 2s;
+	
+}
+
+#Rectangle1{
+	fill: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
 .rocket {
@@ -786,19 +798,17 @@ a:hover .svg-elem-0-1 {
 	flex-direction: column;
 	z-index: 1000;
 	position: relative;
-	margin: 50%;
+	left: 50%;
+	top: 10%;
+	width: 60px;
 }
 
 .cloud_bucket {
-
-	width: 70vw;
-	position:absolute;
+	width: 70%;
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	top: -30vh;
-	
-
-
+	top: -67vh;
 }
 
 .rocket_tail {
@@ -811,36 +821,50 @@ a:hover .svg-elem-0-1 {
 
 .clouds1 {
 	position: absolute;
-	margin-left: 45%;
+	margin-left: 65%;
 	box-sizing: border-box;
-
 }
 
 .clouds2 {
 	position: absolute;
 	width: 65%;
-	margin-left: 30%;
+	margin-left: 40%;
 	box-sizing: border-box;
 }
 
 .clouds3 {
 	position: absolute;
 	width: 65%;
-	margin-left: -10%;
+	margin-left: -9%;
 	box-sizing: border-box;
-	
 }
 
 .clouds4 {
 	position: absolute;
 	width: 65%;
-	margin-left: 10%;
+	margin-left: 25%;
 	box-sizing: border-box;
 }
 
-.tail-path{}
+.tail-path {
+}
 
-.tail{
+.tail {
 	margin-left: -12px;
 	overflow: visible;
+}
+
+/* must make this specific to screen size*** */
+.launch_moon {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	border-radius: 999px;
+	background-size: 100px 100px;
+	cursor: pointer;
+	right: 25%;
+	top: 10%;
+	background-position: center;
+	background-image: url(./Assets/images/moon.jfif);
+	z-index: 500000;
 }
