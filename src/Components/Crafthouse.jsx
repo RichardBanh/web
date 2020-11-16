@@ -8,6 +8,7 @@ class CraftHouse extends Component {
       fontgrad: "null",
       color1: "#D76161",
       color2: "#18464B",
+      planet: "launch_moon",
     };
   }
 
@@ -60,13 +61,25 @@ class CraftHouse extends Component {
     anime.running.length = 0;
     var animation = anime.timeline({});
 
-    animation.add({
-      targets: ".rocket",
-      rotate: 20,
-      easing: "linear",
-      duration: 100,
-    });
-    this.setState({ color1: "#FAFFC0", color2: "#FF3221" });
+    animation
+      .add({
+        targets: ".rocket",
+        rotate: 20,
+        easing: "linear",
+        duration: 100,
+      })
+      .add({
+        targets: ".rocket",
+        translateY: -250,
+        translateX: 100,
+        duration: 400,
+        easing: "easeInOutQuad",
+        delay: 150,
+      });
+    setTimeout(
+      () => this.setState({ color1: "#FAFFC0", color2: "#FF3221" }),
+      261
+    );
     anime({
       targets: "#Rectangle1",
       d: [
@@ -106,20 +119,35 @@ class CraftHouse extends Component {
       loop: true,
     });
 
+    animation.add({
+      targets: ".cloud_bucket svg",
+      translateY: "3000px",
+      rotate: 20,
+      delay: 500,
+      duration: 1500,
+    });
+
     animation
       .add({
-        targets: ".cloud_bucket svg",
-        translateY: "3000px",
-        rotate: 20,
-        delay: 1000,
-        duration: 2000,
-      })
-      .add({
-        targets: ".crafthouse",
+        targets: ".backgrounddiv div",
         backgroundColor: ["#495464"],
         easing: "easeInOutQuad",
+        delay: anime.stagger(50),
+      })
+      .add({
+        targets: ".launch_moon",
+        rotate: 360,
+        duration: 500,
+        easing: "easeInOutQuad",
+      })
+      .add({
+        targets: "#float-text, #float-text a",
+        color: "#f6fa03",
       });
-    this.setState({ fontgrad: "fontgrad" });
+    setTimeout(
+      () => this.setState({ fontgrad: "fontgrad", planet: "sun" }),
+      5000
+    );
   };
 
   componentDidMount() {
@@ -128,8 +156,23 @@ class CraftHouse extends Component {
   render() {
     return (
       <>
-        <div className="launch_moon" onClick={this.rocketLaunch}></div>
+        <div className={this.state.planet} onClick={this.rocketLaunch}></div>
         <div className="crafthouse">
+          <div className="backgrounddiv">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="float-text">
+              Contact us for design/marketing and coding inquiries at{" "}
+              <a href="tel:+17789527551">7789527551</a>
+            </div>
+          </div>
           <h1 className="crafthouse_header" id={this.state.fontgrad}>
             cRaFtHoUsE
           </h1>
