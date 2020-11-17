@@ -685,18 +685,38 @@ g circle:nth-child(odd) {
 }
 /* Single page blog */
 
-svg circle .singleBlogp {
+.singleBlogp {
 	width: 100%;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
 }
 
+
+
 .single_block {
 	width: 47%;
+	height: 60%;
 	background-color: white;
 	padding: 15px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.single_block::-webkit-scrollbar-thumb {
+	background: linear-gradient(173deg, #d2d6f7 35%, #704ff5 50%);
+	border-radius: 9px;
+}
+.single_block::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(13deg, #704ff5 14%, #d2d6f7 64%);
+}
+.single_block::-webkit-scrollbar{
+	width: 10px;
+	background: #ffffff;
+	border-radius: 3px;
+	box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 
 .blog_date {
@@ -768,6 +788,7 @@ svg circle .singleBlogp {
 .ux {
 	width: 100%;
 	height: 100%;
+	background-color: #18464b;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -795,13 +816,14 @@ svg circle .singleBlogp {
 	position: relative;
 	margin-left: 200px;
 	letter-spacing: -3px;
-	font-family: noto-serif-b;
+	font-family: noto-serif;
 	width: auto;
-	font-size: 67px;
+	font-size: 90px;
 	background: -webkit-linear-gradient(#d76161, #18464b);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	z-index: 1000;
+
 }
 
 .backgrounddiv {
@@ -813,13 +835,14 @@ svg circle .singleBlogp {
 	overflow: hidden;
 }
 
-.backgrounddiv div {
+.backgrounddiv .blockChange {
 	width: 10%;
 	height: 100%;
 	background-color: #ffffff;
 	background-image: url(./Assets/images/star.svg);
 	background-repeat: repeat;
 	background-size: 40px 40px;
+	overflow: hidden;
 }
 
 #rocket1 {
@@ -836,16 +859,18 @@ svg circle .singleBlogp {
 	all: revert;
 	position: relative;
 	margin-left: 200px;
-	letter-spacing: -5px;
-  font-family: noto-serif-b;
-  background-color: none;
+	letter-spacing: -0px;
+	font-family: noto-serif-b;
+	background-color: none;
+	background-image: none;
 	width: auto;
 	font-size: 70px;
 	color: #f6fa03;
-	transition: color 1s linear;
+	transition: all 1s linear;
 	-webkit-animation: glow 2s ease-in-out infinite alternate;
 	-moz-animation: glow 2s ease-in-out infinite alternate;
 	animation: glow 2s ease-in-out infinite alternate;
+	overflow: shor;
 }
 
 @keyframes glow {
@@ -926,11 +951,14 @@ svg circle .singleBlogp {
 	height: 150px;
 	width: 300px;
 	color: white;
-	left: 60%;
+	left: 50%;
 	padding-left: 10px;
-  padding-right: 10px;
+	padding-right: 10px;
 	font-size: 40px;
 	font-family: turtle-b;
+	background-image: none;
+	overflow: visible;
+	background-color: #05063800;
 }
 
 #float-text a {
@@ -939,7 +967,8 @@ svg circle .singleBlogp {
 }
 
 .shadow {
-	text-shadow: 0px 0px 10px #ff7300;
+	text-shadow: 0px 0px 5px #ff7300;
+	transition: all 1s;
 }
 /* must make this specific to screen size*** */
 @keyframes shadow {

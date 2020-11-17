@@ -8,9 +8,9 @@ class CraftHouse extends Component {
 			fontgrad: "null",
 			color1: "#D76161",
 			color2: "#18464B",
-      planet: "launch_moon",
-      textShadow: "shadowOn",
-      shadow:""
+			planet: "launch_moon",
+			textShadow: "shadowOn",
+			shadow: "",
 		};
 	}
 
@@ -131,21 +131,22 @@ class CraftHouse extends Component {
 
 		animation
 			.add({
-				targets: ".backgrounddiv div",
+				targets: ".backgrounddiv .blockChange",
 				backgroundColor: ["#495464"],
 				easing: "easeInOutQuad",
 				delay: anime.stagger(50),
+			})
+			.add({
+				targets: "#float-text, #float-text a ",
+				color: "#ffe600",
+				delay: 0,
+				easing: "easeInOutQuad",
 			})
 			.add({
 				targets: ".launch_moon",
 				rotate: 360,
 				duration: 500,
 				easing: "easeInOutQuad",
-			})
-			.add({
-				targets: "#float-text, #float-text a",
-        color: "#f6fa03",
-        
 			})
 			.add({
 				targets: "#rocket1",
@@ -159,10 +160,15 @@ class CraftHouse extends Component {
 				translateX: 100,
 				translateY: -1040,
 				easing: "easeOutElastic(1, .6)",
-			})
+			});
 		setTimeout(
-			() => this.setState({ fontgrad: "fontgrad", planet: "sun", shadow:"shadow" }),
-			5000
+			() =>
+				this.setState({
+					fontgrad: "fontgrad",
+					planet: "sun",
+					shadow: "shadow",
+				}),
+			4500
 		);
 	};
 
@@ -176,15 +182,13 @@ class CraftHouse extends Component {
 				<div className={this.state.planet} onClick={this.rocketLaunch}></div>
 				<div className="crafthouse">
 					<div className="backgrounddiv">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-            <div></div>
+						<div className="blockChange"></div>
+						<div className="blockChange"></div>
+						<div className="blockChange"></div>
+						<div className="blockChange"></div>
+						<div className="blockChange"></div>
+						<div className="blockChange"></div>
+						<div className="blockChange"></div>
 
 						<div id="float-text" className={this.state.shadow}>
 							Contact us for design/marketing and coding inquiries at{" "}
@@ -566,13 +570,7 @@ class CraftHouse extends Component {
 											transform="translate(335.000000, 120.000000)"
 										>
 											<circle id="Oval" cx="56" cy="77" r="35"></circle>
-											<circle
-												id="Oval"
-												cx="56"
-												cy="77"
-												r="35"
-												
-											></circle>
+											<circle id="Oval" cx="56" cy="77" r="35"></circle>
 											<circle
 												id="Oval"
 												cx="35"
@@ -581,13 +579,7 @@ class CraftHouse extends Component {
 												stroke="#D76161"
 											></circle>
 											<circle id="Oval" cx="56" cy="35" r="35"></circle>
-											<circle
-												id="Oval"
-												cx="56"
-												cy="112"
-												r="35"
-												
-											></circle>
+											<circle id="Oval" cx="56" cy="112" r="35"></circle>
 											<circle
 												id="Oval"
 												cx="80"
@@ -600,9 +592,21 @@ class CraftHouse extends Component {
 											id="Second"
 											transform="translate(581.000000, 120.000000)"
 										>
-											<circle id="Oval" cx="56" cy="77" r="35" stroke="#D76161"></circle>
+											<circle
+												id="Oval"
+												cx="56"
+												cy="77"
+												r="35"
+												stroke="#D76161"
+											></circle>
 											<circle id="Oval" cx="56" cy="77" r="35"></circle>
-											<circle stroke="#D76161" id="Oval" cx="35" cy="77" r="35"></circle>
+											<circle
+												stroke="#D76161"
+												id="Oval"
+												cx="35"
+												cy="77"
+												r="35"
+											></circle>
 											<circle id="Oval" cx="56" cy="35" r="35"></circle>
 											<circle id="Oval" cx="56" cy="112" r="35"></circle>
 											<circle id="Oval" cx="80" cy="77" r="35"></circle>
