@@ -70,8 +70,8 @@ class CraftHouse extends Component {
       })
       .add({
         targets: ".rocket",
-        translateY: -250,
-        translateX: 100,
+        translateY: -240,
+        translateX: 110,
         duration: 400,
         easing: "easeInOutQuad",
         delay: 150,
@@ -143,6 +143,19 @@ class CraftHouse extends Component {
       .add({
         targets: "#float-text, #float-text a",
         color: "#f6fa03",
+      })
+      .add({
+        targets: "#rocket1",
+        duration: 1000,
+        translateY: -1040,
+        easing: "easeInOutQuad",
+      })
+      .add({
+        targets: "#rocket2",
+        duration: 950,
+        translateX: 100,
+        translateY: -1040,
+        easing: "easeOutElastic(1, .6)",
       });
     setTimeout(
       () => this.setState({ fontgrad: "fontgrad", planet: "sun" }),
@@ -153,6 +166,7 @@ class CraftHouse extends Component {
   componentDidMount() {
     this.playanime();
   }
+
   render() {
     return (
       <>
@@ -178,8 +192,8 @@ class CraftHouse extends Component {
           </h1>
           <div className="rocket">
             <svg
-              width="67px"
-              height="207px"
+              width="50px"
+              height="123px"
               viewBox="0 0 67 207"
               className="rocket_head"
             >
@@ -233,8 +247,196 @@ class CraftHouse extends Component {
               </g>
             </svg>
             <svg
-              width="90px"
-              height="100px"
+              width="65px"
+              height="70px"
+              viewBox="0 0 65 100"
+              version="1.1"
+              className="tail"
+            >
+              <defs>
+                <radialGradient id="radialGradient-2">
+                  <stop stop-color={this.state.color1} offset="0%"></stop>
+                  <stop stop-color={this.state.color2} offset="100%"></stop>
+                </radialGradient>
+              </defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="Export">
+                  <g id="Tail-Right">
+                    <path
+                      d="M 55.0734 0.0006 L 13 0.0006 L 16 49 L 31 58 C 45 39 52.5045 23.0506 56 37 C 57.6422 9.6779 57.6422 4.2233 55.0734 0.0006 Z"
+                      id="Rectangle1"
+                      fill="url(#radialGradient-2)"
+                    ></path>
+                    <path
+                      className="tail_path"
+                      d="M 48.4755 24.5391 C 55.4603 16.5625 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 54.187 57.6683 C 55.4519 46.6308 55.3174 37.3072 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 44.6637 65.0314 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 51.6444 100 C 23.0791 91.4101 4.0318 73.0078 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 2.7631 46.6237 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 16.7289 15.3345 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 20.693 42.4861 28.1561 50.3036 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 40.2179 28.218 C 39.5832 23.3117 40.8525 18.4015 43.3909 13.4949 Z"
+                      fill="#000000"
+                      fill-rule="nonzero"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div className="rocket" id="rocket2">
+            <svg
+              width="50px"
+              height="123px"
+              viewBox="0 0 67 207"
+              className="rocket_head"
+            >
+              <defs>
+                <radialGradient id="radialGradient-1">
+                  <stop stop-color={this.state.color1} offset="0%"></stop>
+                  <stop stop-color={this.state.color2} offset="100%"></stop>
+                </radialGradient>
+              </defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="Export" transform="translate(-211.000000, -175.000000)">
+                  <g
+                    id="Rocket-cone"
+                    transform="translate(211.000000, 175.000000)"
+                  >
+                    <rect
+                      id="Rectangle"
+                      fill="#FFFFFF"
+                      fill-rule="nonzero"
+                      x="8"
+                      y="69"
+                      width="52"
+                      height="135"
+                    ></rect>
+                    <text
+                      id="Letter-C"
+                      fill="url(#radialGradient-1)"
+                      font-family="Athelas-Regular, Athelas"
+                      font-size="48"
+                      font-weight="normal"
+                      letter-spacing="0.290909"
+                    >
+                      <tspan x="18" y="150">
+                        C
+                      </tspan>
+                    </text>
+                    <path
+                      d="M67,80.31443 L33.7836565,0 L0.176661518,78.4903104 C-0.263922057,79.5292138 0.11958677,80.4578016 1.327188,81.2760736 L5.06902509,84.0365457 C5.48872929,84.0365457 5.83012784,85.3740378 5.83012784,87.0183068 L5.83012784,204.018239 C5.83012784,205.662508 6.17152639,207 6.59123059,207 L60.9738113,207 C61.3935155,207 61.734914,205.662508 61.734914,204.018239 L61.7380459,87.0183068 C61.7380459,85.3740378 62.0794445,84.0365457 62.4991487,84.0365457 L66.109521,81.1677145 L67,80.31443 Z M57.8723834,201.552632 C47.2840264,198.738437 39.2593004,197.33134 33.7982052,197.33134 C28.3371101,197.33134 20.3129772,198.738437 9.72580645,201.552632 C9.75007056,150.395126 9.76220262,111.670385 9.76220262,85.378409 C9.76220262,65.6287457 21.8710139,86.8166742 33.7982052,85.378409 C45.6883388,83.9446126 57.3962184,59.8148901 57.8755503,84.8485569 C58.5156554,118.278794 58.5145998,157.180152 57.8723834,201.552632 Z"
+                      id="Shape"
+                      fill="#000000"
+                      fill-rule="nonzero"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <svg
+              width="65px"
+              height="70px"
+              viewBox="0 0 65 100"
+              version="1.1"
+              className="tail"
+            >
+              <defs>
+                <radialGradient id="radialGradient-2">
+                  <stop stop-color={this.state.color1} offset="0%"></stop>
+                  <stop stop-color={this.state.color2} offset="100%"></stop>
+                </radialGradient>
+              </defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="Export">
+                  <g id="Tail-Right">
+                    <path
+                      d="M 55.0734 0.0006 L 13 0.0006 L 16 49 L 31 58 C 45 39 52.5045 23.0506 56 37 C 57.6422 9.6779 57.6422 4.2233 55.0734 0.0006 Z"
+                      id="Rectangle1"
+                      fill="url(#radialGradient-2)"
+                    ></path>
+                    <path
+                      className="tail_path"
+                      d="M 48.4755 24.5391 C 55.4603 16.5625 54.8257 8.5901 51.0139 0 C 69.4259 16.5621 68.7916 36.1952 54.187 57.6683 C 55.4519 46.6308 55.3174 37.3072 51.0139 33.7422 C 44.0291 42.9454 42.7598 53.9883 44.6637 65.0314 L 37.6789 57.0547 C 34.5059 76.0749 41.4866 88.9569 51.6444 100 C 23.0791 91.4101 4.0318 73.0078 14.1903 23.3115 C 5.9362 26.378 4.0324 36.1946 2.7631 46.6237 C -2.9484 28.2176 -0.4099 12.8815 16.0943 0.6114 C 14.825 6.1309 14.825 11.0415 16.7289 15.3345 C 18.6327 11.0415 21.1713 7.9711 24.3484 6.1313 C 18.1019 29.3681 20.693 42.4861 28.1561 50.3036 C 26.2523 39.8735 28.7907 30.6705 35.7755 22.6984 L 40.2179 28.218 C 39.5832 23.3117 40.8525 18.4015 43.3909 13.4949 Z"
+                      fill="#000000"
+                      fill-rule="nonzero"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div className="rocket" id="rocket1">
+            <svg
+              width="50px"
+              height="123px"
+              viewBox="0 0 67 207"
+              className="rocket_head"
+            >
+              <defs>
+                <radialGradient id="radialGradient-1">
+                  <stop stop-color={this.state.color1} offset="0%"></stop>
+                  <stop stop-color={this.state.color2} offset="100%"></stop>
+                </radialGradient>
+              </defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g id="Export" transform="translate(-211.000000, -175.000000)">
+                  <g
+                    id="Rocket-cone"
+                    transform="translate(211.000000, 175.000000)"
+                  >
+                    <rect
+                      id="Rectangle"
+                      fill="#FFFFFF"
+                      fill-rule="nonzero"
+                      x="8"
+                      y="69"
+                      width="52"
+                      height="135"
+                    ></rect>
+                    <text
+                      id="Letter-C"
+                      fill="url(#radialGradient-1)"
+                      font-family="Athelas-Regular, Athelas"
+                      font-size="48"
+                      font-weight="normal"
+                      letter-spacing="0.290909"
+                    >
+                      <tspan x="18" y="150">
+                        C
+                      </tspan>
+                    </text>
+                    <path
+                      d="M67,80.31443 L33.7836565,0 L0.176661518,78.4903104 C-0.263922057,79.5292138 0.11958677,80.4578016 1.327188,81.2760736 L5.06902509,84.0365457 C5.48872929,84.0365457 5.83012784,85.3740378 5.83012784,87.0183068 L5.83012784,204.018239 C5.83012784,205.662508 6.17152639,207 6.59123059,207 L60.9738113,207 C61.3935155,207 61.734914,205.662508 61.734914,204.018239 L61.7380459,87.0183068 C61.7380459,85.3740378 62.0794445,84.0365457 62.4991487,84.0365457 L66.109521,81.1677145 L67,80.31443 Z M57.8723834,201.552632 C47.2840264,198.738437 39.2593004,197.33134 33.7982052,197.33134 C28.3371101,197.33134 20.3129772,198.738437 9.72580645,201.552632 C9.75007056,150.395126 9.76220262,111.670385 9.76220262,85.378409 C9.76220262,65.6287457 21.8710139,86.8166742 33.7982052,85.378409 C45.6883388,83.9446126 57.3962184,59.8148901 57.8755503,84.8485569 C58.5156554,118.278794 58.5145998,157.180152 57.8723834,201.552632 Z"
+                      id="Shape"
+                      fill="#000000"
+                      fill-rule="nonzero"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <svg
+              width="65px"
+              height="70px"
               viewBox="0 0 65 100"
               version="1.1"
               className="tail"
