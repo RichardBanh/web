@@ -188,7 +188,7 @@ class CraftHouse extends Component {
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
-						<div className="blockChange"></div>
+						
 
 						<div id="float-text" className={this.state.shadow}>
 							Contact us for design/marketing and coding inquiries at{" "}
@@ -1469,6 +1469,7 @@ class CraftHouse extends Component {
 								</g>
 							</g>
 						</svg>
+						
 					</div>
 				</div>
 			</>

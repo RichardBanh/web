@@ -39,14 +39,7 @@ body {
 	overflow-y: hidden;
 }
 
-@media all and (min-width: 1680px) {
-	.App {
-		width: 1480px;
-		margin-left: auto;
-		margin-right: auto;
-		overflow: hidden;
-	}
-}
+
 
 #root {
 	width: 100%;
@@ -58,6 +51,9 @@ body {
 
 .App {
 	height: 95%;
+	width: 1480px;
+	margin-left: auto;
+	margin-right: auto;
 	max-height: 900px;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -837,7 +833,10 @@ g circle:nth-child(odd) {
 
 .backgrounddiv .blockChange {
 	width: 10%;
+	max-width: 300px;
+	min-width: 220px;
 	height: 100%;
+	
 	background-color: #ffffff;
 	background-image: url(./Assets/images/star.svg);
 	background-repeat: repeat;
@@ -1006,6 +1005,7 @@ g circle:nth-child(odd) {
 	width: 103px;
 	height: 103px;
 }
+
 .sun {
 	position: absolute;
 	filter: none;
