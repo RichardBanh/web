@@ -181,15 +181,13 @@ class CraftHouse extends Component {
 			<>
 				<div className={this.state.planet} onClick={this.rocketLaunch}></div>
 				<div className="crafthouse">
-					<div className="backgrounddiv">
+					<div className="backgrounddiv" style={{ height: `${this.props.size}%` }}>
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
 						<div className="blockChange"></div>
-						
-
 						<div id="float-text" className={this.state.shadow}>
 							Contact us for design/marketing and coding inquiries at{" "}
 							<a href="tel:+17789527551">7789527551</a>
@@ -1469,7 +1467,6 @@ class CraftHouse extends Component {
 								</g>
 							</g>
 						</svg>
-						
 					</div>
 				</div>
 			</>

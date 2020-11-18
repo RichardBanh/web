@@ -60,7 +60,7 @@ function Landing(props) {
         <div className="wrapper">
           <div className="subtop">
             <h1>Richard Banh</h1>
-            <img className="landing_profilepic" src={profilepic} alt="" />
+            <img className="landing_profilepic visPhoto" src={profilepic} alt="" />
           </div>
           <p className="text">
             Looking to build cool stuff, <br />

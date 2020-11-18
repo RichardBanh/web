@@ -39,8 +39,6 @@ body {
 	overflow-y: hidden;
 }
 
-
-
 #root {
 	width: 100%;
 	height: 100%;
@@ -270,7 +268,7 @@ li a {
 
 	padding: 20px;
 
-	width: 50%;
+	width: 55%;
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
@@ -672,12 +670,12 @@ a:hover .svg-elem-0-1 {
 }
 g circle:nth-child(2n) {
 	stroke: #d76161;
-	stroke-width: 1px;
+	stroke-width: 2px;
 }
 
 g circle:nth-child(odd) {
 	stroke: #18464b;
-	stroke-width: 1px;
+	stroke-width: 3px;
 }
 /* Single page blog */
 
@@ -689,8 +687,6 @@ g circle:nth-child(odd) {
 	align-items: center;
 	background-color: white;
 }
-
-
 
 .single_block {
 	width: 47%;
@@ -708,7 +704,7 @@ g circle:nth-child(odd) {
 .single_block::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(13deg, #704ff5 14%, #d2d6f7 64%);
 }
-.single_block::-webkit-scrollbar{
+.single_block::-webkit-scrollbar {
 	width: 10px;
 	background: #ffffff;
 	border-radius: 3px;
@@ -813,20 +809,22 @@ g circle:nth-child(odd) {
 	margin-left: 200px;
 	letter-spacing: -3px;
 	font-family: noto-serif;
-	width: auto;
-	font-size: 90px;
+	white-space: nowrap;
+	width: 400px;
+	font-size: 70px;
 	background: -webkit-linear-gradient(#d76161, #18464b);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	z-index: 1000;
-
 }
 
 .backgrounddiv {
 	display: flex;
 	position: absolute;
 	width: 90%;
-	height: 900px;
+	height: 70%;
+	min-height: 893px;
+	max-height: 900px;
 	z-index: -500;
 	overflow: hidden;
 }
@@ -836,7 +834,6 @@ g circle:nth-child(odd) {
 	max-width: 300px;
 	min-width: 220px;
 	height: 100%;
-	
 	background-color: #ffffff;
 	background-image: url(./Assets/images/star.svg);
 	background-repeat: repeat;
@@ -860,16 +857,14 @@ g circle:nth-child(odd) {
 	margin-left: 200px;
 	letter-spacing: -0px;
 	font-family: noto-serif-b;
-	background-color: none;
 	background-image: none;
-	width: auto;
-	font-size: 70px;
+	width: 400px;
+	font-size: 69px;
 	color: #f6fa03;
 	transition: all 1s linear;
 	-webkit-animation: glow 2s ease-in-out infinite alternate;
 	-moz-animation: glow 2s ease-in-out infinite alternate;
 	animation: glow 2s ease-in-out infinite alternate;
-	overflow: shor;
 }
 
 @keyframes glow {
@@ -889,8 +884,8 @@ g circle:nth-child(odd) {
 	flex-direction: column;
 	z-index: 1000;
 	position: relative;
-	left: 45%;
-	top: 24%;
+	left: 42%;
+	top: 26%;
 	width: 60px;
 }
 
@@ -972,13 +967,13 @@ g circle:nth-child(odd) {
 /* must make this specific to screen size*** */
 @keyframes shadow {
 	0% {
-		box-shadow: 0 0 0 15px #ffe6007e;
+		box-shadow: 0 0 9px 15px #ffe6007e;
 	}
 	50% {
-		box-shadow: 0 0 0 1px rgba(255, 230, 0, 0.199);
+		box-shadow: 0 0 9px 1px rgba(255, 230, 0, 0.199);
 	}
 	100% {
-		box-shadow: 0 0 0 15px #ffe60073;
+		box-shadow: 0 0 9px 15px #ffe60073;
 	}
 }
 
@@ -994,7 +989,7 @@ g circle:nth-child(odd) {
 	background-position: center;
 	background-image: url(./Assets/images/moon.jfif);
 	z-index: 500000;
-	box-shadow: 0 0 0 20px #ffe600d8;
+	box-shadow: 0 0 1px 20px #ffe600d8;
 	animation: shadow 3s infinite;
 }
 
@@ -1019,18 +1014,112 @@ g circle:nth-child(odd) {
 	background-position: 65% 56%;
 	background-image: url(./Assets/images/earth.jpg);
 	z-index: 500000;
-	box-shadow: 0 0 0 20px #09ff01a9;
+	box-shadow: 0 0 4px 20px #09ff01a9;
 	animation: shadowe 3s infinite;
 }
 
 @keyframes shadowe {
 	0% {
-		box-shadow: 0 0 0 15px #48ff00be;
+		box-shadow: 0 0 10px 15px #48ff00be;
 	}
 	50% {
-		box-shadow: 0 0 0 1px #15ff006e;
+		box-shadow: 0 0 3px 1px #15ff006e;
 	}
 	100% {
-		box-shadow: 0 0 0 15px #48ff00e5;
+		box-shadow: 0 0 10px 15px #48ff00e5;
+	}
+}
+
+@media all and (min-height: 900px) {
+	.blockChange {
+		height: 500px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.backgrounddiv {
+		height: 900px;
+	}
+	#float-text {
+		left: 70%;
+	}
+	.launch_moon {
+		left: 80%;
+	}
+	.sun {
+		left: 80%;
+	}
+}
+@media all and (min-width: 1333px) {
+	#float-text {
+		left: 70%;
+	}
+	.launch_moon {
+		left: 80%;
+	}
+	.sun {
+		left: 80%;
+	}
+}
+
+@media all and (min-width: 900px) {
+	#float-text {
+		left: 67%;
+	}
+
+	.launch_moon {
+		left: 80%;
+	}
+	.sun {
+		left: 80%;
+	}
+}
+
+@media all and (min-width: 1501px) {
+	#float-text {
+		left: 50%;
+	}
+	.launch_moon {
+		left: 70%;
+	}
+	.sun {
+		left: 70%;
+	}
+}
+
+@media all and (min-width: 2000px) {
+	#float-text {
+		left: 45%;
+	}
+}
+@media all and (min-width: 2200px) {
+	#float-text {
+		left: 40%;
+	}
+	.launch_moon {
+		left: 70%;
+	}
+	.sun {
+		left: 70%;
+	}
+}
+@media all and (min-width: 3000px) {
+	#float-text {
+		left: 10%;
+	}
+	.launch_moon {
+		left: 70%;
+	}
+	.sun {
+		left: 70%;
+	}
+}
+
+@media all and (max-width: 1235px) {
+	.visPhoto {
+		display: none;
+	}
+	.subtop {
+		height: 204px;
 	}
 }

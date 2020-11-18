@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import ContentBlog from "./Components/Blog";
 import CodePage from "./Components/Code";
@@ -14,23 +14,27 @@ import SingleBlog from "./Components/Blog/SingleBlog";
 import data from "./Data/Blog.json";
 
 function App() {
-
-	const tempData = data
+	const [size, setSize] = useState(0);
+	const tempData = data;
 	const dataFind = (event) => {
 		return tempData.blog.find((entry) => {
 			return entry.id === Number(event);
 		});
 	};
+	useEffect(() => {
+		const height = document.getElementById("sandwich").clientHeight;
+		setSize(height);
+	}, []);
 
 	return (
 		<BrowserRouter>
 			<div className="App">
-				<div className="sandwich">
+				<div className="sandwich" id="sandwich">
 					<ul className="menu">
 						<li className="rectangle">
 							<Link to="/">
 								<div className="shapeshifter play">
-									<img className="icon" src={home} alt='Home Link' />
+									<img className="icon" src={home} alt="Home Link" />
 								</div>
 								<p className="visibility">Home</p>
 							</Link>
@@ -38,7 +42,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/blog">
 								<div className="shapeshifter play">
-									<img className="icon" src={book} alt='Blog Link' />
+									<img className="icon" src={book} alt="Blog Link" />
 								</div>
 								<p className="visibility">Blog</p>
 							</Link>
@@ -46,7 +50,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/UX">
 								<div className="shapeshifter play">
-									<img className="icon" src={pen} alt='User Experience Link' />
+									<img className="icon" src={pen} alt="User Experience Link" />
 								</div>
 								<p className="visibility">UX</p>
 							</Link>
@@ -54,7 +58,7 @@ function App() {
 						<li className="rectangle">
 							<Link to="/code">
 								<div className="shapeshifter play">
-									<img className="icon" src={code} alt='Code Link' />
+									<img className="icon" src={code} alt="Code Link" />
 								</div>
 								<p className="visibility">Code</p>
 							</Link>
@@ -62,7 +66,11 @@ function App() {
 						<li className="rectangle">
 							<Link to="/cRaFtHouse">
 								<div className="shapeshifter2 play2">
-									<img className="icon" src={rocket} alt='Inhouse Design - Craft House'/>
+									<img
+										className="icon"
+										src={rocket}
+										alt="Inhouse Design - Craft House"
+									/>
 								</div>
 								<p className="visibility">cRaFtHouse</p>
 							</Link>
@@ -77,7 +85,7 @@ function App() {
 						<CodePage />
 					</Route>
 					<Route exact path="/blog">
-						<ContentBlog/>
+						<ContentBlog />
 					</Route>
 					<Route path="/blog/:id">
 						<SingleBlog dataFind={dataFind} />
@@ -86,7 +94,7 @@ function App() {
 						<Ux />
 					</Route>
 					<Route path="/crafthouse">
-						<CraftHouse />
+						<CraftHouse size={size} />
 					</Route>
 				</Switch>
 			</div>
