@@ -20,7 +20,7 @@ import githubBut from "../Assets/images/git.png";
 import brain from "../Assets/images/logos/BrainstationLogo.jfif";
 import animal from "../Assets/images/logos/AnimalLogo.png";
 import liberal from "../Assets/images/logos/LiberalPartyLogo.png";
-import uvic from "../Assets/images/logos/UvicLogo.png"
+import uvic from "../Assets/images/logos/UvicLogo.png";
 
 import Box from "./Blog/BoxBlog";
 import InstagramPhotos from "./photoComp";
@@ -62,7 +62,11 @@ function Landing(props) {
         <div className="wrapper">
           <div className="subtop">
             <h1>Richard Banh</h1>
-            <img className="landing_profilepic visPhoto" src={profilepic} alt="" />
+            <img
+              className="landing_profilepic visPhoto"
+              src={profilepic}
+              alt=""
+            />
           </div>
           <p className="text">
             Looking to build cool stuff, <br />
@@ -118,7 +122,7 @@ function Landing(props) {
                   <img src={burgburger} alt="" /> ={">>"}Computer Sci
                 </p>
               </div>
-              <div className="rectangleRes_buttonblock">
+              <div className="rectangleRes_buttonblock landingdisplay">
                 <button
                   className="button"
                   onClick={(e) => {
@@ -148,7 +152,6 @@ function Landing(props) {
                     src={animal}
                     alt="Animal Logic Link"
                     onClick={(e) => {
-                     
                       window.open("https://animallogic.com/");
                     }}
                   />
@@ -156,7 +159,6 @@ function Landing(props) {
                     src={liberal}
                     alt="Liberal Party link"
                     onClick={(e) => {
-                      
                       window.open("https://liberal.ca/");
                     }}
                   />
@@ -167,7 +169,6 @@ function Landing(props) {
                     src={uvic}
                     alt="UVic Link"
                     onClick={(e) => {
-                      
                       window.open("https://www.uvic.ca");
                     }}
                   />
@@ -175,10 +176,30 @@ function Landing(props) {
                     src={brain}
                     alt="BrainStation Link"
                     onClick={(e) => {
-                      
                       window.open("https://www.brainstation.io");
                     }}
                   />
+                </div>
+                <div className="rectangleRes_buttonblock landingdisplay2">
+                  <button
+                    className="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://drive.google.com/file/d/1sbTg4u4pBasLYJrjvzw-NEKCrug7Ng3Q/view?usp=sharing"
+                      );
+                    }}
+                  >
+                    Resume Download
+                  </button>
+
+                  <a
+                    href="https://github.com/RichardBanh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img className="git" src={githubBut} alt="" />
+                  </a>
                 </div>
               </div>
             </div>
