@@ -16,10 +16,7 @@ import cat12 from "../Assets/icons/group1Cats/cats5cat5-1.svg";
 import cat13 from "../Assets/icons/group1Cats/cats5cat5-2.svg";
 import cat14 from "../Assets/icons/group1Cats/cats5cat5-3.svg";
 import githubBut from "../Assets/images/git.png";
-import animalLogo from "../Assets/images/logos/AnimalLogo.png";
-import brainStation from "../Assets/images/logos/BrainstationLogo.jfif";
-import liberalparty from "../Assets/images/logos/LiberalPartyLogo.png";
-import UvicLogo from "../Assets/images/logos/UvicLogo.png";
+
 import Box from "./Blog/BoxBlog";
 import InstagramPhotos from "./photoComp";
 
@@ -143,7 +140,7 @@ function Landing(props) {
                 <div className="block">
                   <h1>Worked @</h1>
                   <img
-                    src={animalLogo}
+                    src="/images/logos/AnimalLogo.png"
                     alt=""
                     onClick={(e) => {
                       e.preventDefault();
@@ -151,7 +148,7 @@ function Landing(props) {
                     }}
                   />
                   <img
-                    src={liberalparty}
+                    src="/images/logos/LiberalPartyLogo.png"
                     alt=""
                     onClick={(e) => {
                       e.preventDefault();
@@ -162,7 +159,7 @@ function Landing(props) {
                 <div className="block">
                   <h1>sTuDiEd @</h1>
                   <img
-                    src={UvicLogo}
+                    src="/images/logos/UvicLogo.png"
                     alt=""
                     onClick={(e) => {
                       e.preventDefault();
@@ -170,7 +167,7 @@ function Landing(props) {
                     }}
                   />
                   <img
-                    src={brainStation}
+                    src="/images/logos/BrainstationLogo.jfif"
                     alt=""
                     onClick={(e) => {
                       e.preventDefault();
