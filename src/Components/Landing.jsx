@@ -17,6 +17,11 @@ import cat13 from "../Assets/icons/group1Cats/cats5cat5-2.svg";
 import cat14 from "../Assets/icons/group1Cats/cats5cat5-3.svg";
 import githubBut from "../Assets/images/git.png";
 
+import brain from "../Assets/images/logos/BrainstationLogo.jfif";
+import animal from "../Assets/images/logos/AnimalLogo.png";
+import liberal from "../Assets/images/logos/LiberalPartyLogo.png";
+import uvic from "../Assets/images/logos/UvicLogo.png"
+
 import Box from "./Blog/BoxBlog";
 import InstagramPhotos from "./photoComp";
 
@@ -140,18 +145,18 @@ function Landing(props) {
                 <div className="block">
                   <h1>Worked @</h1>
                   <img
-                    src="/images/logos/AnimalLogo.png"
-                    alt=""
+                    src={animal}
+                    alt="Animal Logic Link"
                     onClick={(e) => {
-                      e.preventDefault();
+                     
                       window.open("https://animallogic.com/");
                     }}
                   />
                   <img
-                    src="/images/logos/LiberalPartyLogo.png"
-                    alt=""
+                    src={liberal}
+                    alt="Liberal Party link"
                     onClick={(e) => {
-                      e.preventDefault();
+                      
                       window.open("https://liberal.ca/");
                     }}
                   />
@@ -159,18 +164,18 @@ function Landing(props) {
                 <div className="block">
                   <h1>sTuDiEd @</h1>
                   <img
-                    src="/images/logos/UvicLogo.png"
-                    alt=""
+                    src={uvic}
+                    alt="UVic Link"
                     onClick={(e) => {
-                      e.preventDefault();
+                      
                       window.open("https://www.uvic.ca");
                     }}
                   />
                   <img
-                    src="/images/logos/BrainstationLogo.jfif"
-                    alt=""
+                    src={brain}
+                    alt="BrainStation Link"
                     onClick={(e) => {
-                      e.preventDefault();
+                      
                       window.open("https://www.brainstation.io");
                     }}
                   />
