@@ -186,7 +186,7 @@ function Landing(props) {
                     onClick={(e) => {
                       e.preventDefault();
                       window.open(
-                        "https://drive.google.com/file/d/1sbTg4u4pBasLYJrjvzw-NEKCrug7Ng3Q/view?usp=sharing"
+                        "https://drive.google.com/file/d/17PesUJpbsGpi4zn0QUrwp-rZqdkM7dOn/view?usp=sharing"
                       );
                     }}
                   >
