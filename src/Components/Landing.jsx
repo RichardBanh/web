@@ -48,7 +48,7 @@ function Landing(props) {
         return response.json();
       })
       .then((json) => {
-        const sorttoFour = json.blog.filter((entry) => entry.id < 5);
+        const sorttoFour = json.blog.reverse();
         setArray(
           sorttoFour.map(({ date, text, id }) => (
             <Box date={date} text={text} key={id} id={id} />
